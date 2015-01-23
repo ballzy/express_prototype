@@ -1,0 +1,77 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+  {{>includes/phase_banner}}
+
+  <form action="s1.html" method="#" class="form">
+  
+    <a href="eligibility-s2.html" class="example-back-link">Back</a>
+
+    <h1 class="form-title heading-large">
+      Can you get Personal Independence Payment?
+    </h1>
+
+    
+        <!-- terminal illness -->
+    <fieldset class="inline">
+    
+      <legend class="form-label-bold add-padding" for="terminal"><!--Do you have a progressive disease and-->Is your life expectancy <!--is--> less than 6 months?</legend>
+    
+      <div class="form-group"><!-- 'form-group-compound' -->	
+        <label class="block-label" data-target="terminal" for="terminal-yes">
+        <input id="terminal-yes" type="radio" name="terminal" value="Yes">
+        	Yes
+        </label>
+        <label class="block-label" data-target="not-terminal" for="terminal-no">
+        <input id="terminal-no" type="radio" name="terminal" value="No">
+        	No
+        </label>
+      </div>
+   </fieldset>
+      
+      <!--js-hidden-->
+      <div class="form-group js-hidden" id="terminal">
+      
+          <div class="alert">
+          	<h3 class="heading-medium">If you are terminally ill please call this number to fast-track your application</h3>
+          	<p class="heading-xlarge">0800 123 1234</p>
+          	<p>You will need a DS1500 to support your claim</p>
+          </div>
+          
+          <p><a href="start.html" class="button">Finished</a></p> 	 	 
+           
+      </div>
+      
+      <!--js-hidden-->
+      <div class="form-group js-hidden" id="not-terminal">
+	
+	      <h3 class="heading-medium">Based on your answers you may be able to get Personal Independence Payment</h3>
+	
+	      <p>You will have to explain and provide evidence of the details of your condition and how this affects you.</p>
+		
+	
+	      <input type="submit" class="button" value="Start application">
+	  </div>
+
+  </form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}    
