@@ -13,124 +13,133 @@
 {{$content}}
 <main id="page-container" role="main">
 
-{{>includes/phase_banner}}
+	{{>includes/phase_banner}}
 
-  <form action="s8.html" method="#" class="form">
-  
-  	<a href="s6.html" class="example-back-link">Back</a>
-  
-  	<div class="section-progress">
-  	    Step 7 of 17
-  	</div>
+	<div class="grid-row">
+		<div class="column-two-thirds">
 
-    <h1 class="form-title heading-large">
-      Your day-to-day activities - eating and drinking 
-    </h1>
-    
-    <!--<p class="form-title">We need to know if you can do this safely, to an acceptable standard, as often as you need, in a reasonable time.</p> -->     
-    <fieldset class="inline">
-   
-    <legend class="form-label-bold" for="preparing-food">Do you need any help to eat and drink?</legend>
-    
-    <p class="form-hint">This means remembering when to eat, cutting food into pieces, putting food and drink in the mouth, and chewing and swallowing food and drink.</p>
-    
-	<div class="form-group">
-	  <label class="block-label" data-target="eating-drinking-details" for="eating-drinking-yes">
-	  <input id="eating-drinking-yes" type="radio" name="eating-drinking" value="Yes">
-	  Yes
-	</label>
-	<label class="block-label" for="eating-drinking-no">
-	  <input id="eating-drinking-no" type="radio" name="eating-drinking" value="No">
-	  No
-	</label>  
+		  <form action="s8.html" method="#" class="form">
+		  
+		  	<a href="s6.html" class="example-back-link">Back</a>
+		  
+		  	<div class="section-progress">
+		  	    Step 7 of 17
+		  	</div>
+		
+		    <h1 class="form-title heading-large">
+		      Your day-to-day activities - eating and drinking 
+		    </h1>
+		    
+		    <!--<p class="form-title">We need to know if you can do this safely, to an acceptable standard, as often as you need, in a reasonable time.</p> -->     
+		    <fieldset class="inline">
+		   
+		    <legend class="form-label-bold" for="preparing-food">Do you need any help to eat and drink?</legend>
+		    
+		    <p class="form-hint">This means remembering when to eat, cutting food into pieces, putting food and drink in the mouth, and chewing and swallowing food and drink.</p>
+		    
+			<div class="form-group">
+			  <label class="block-label" data-target="eating-drinking-details" for="eating-drinking-yes">
+			  <input id="eating-drinking-yes" type="radio" name="eating-drinking" value="Yes">
+			  Yes
+			</label>
+			<label class="block-label" for="eating-drinking-no">
+			  <input id="eating-drinking-no" type="radio" name="eating-drinking" value="No">
+			  No
+			</label>  
+			</div>
+			
+			</fieldset>
+		     
+		    <!--js-hidden / details-->
+		    
+		    <div class="panel-indent js-hidden" id="eating-drinking-details">
+		     
+		      <fieldset class="inline">
+		       
+		      <div class="form-group">
+		        <p class="form-label-bold" for="aids-appliances">Do you use an aid or appliances to eat and drink?</p>
+		        <p class="form-hint">For example, adapted cutlery.</p>
+		        <label class="block-label" data-target="aids-appliances-details" for="aids-appliances-yes">
+		        <input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
+		        Yes
+		        </label>
+		        <label class="block-label" for="aids-appliances-no">
+		        <input id="aids-appliances-no" type="radio" name="aids-appliances" value="No">
+		        No
+		        </label>  
+		      </div>  
+		              
+		      	<div class="panel js-hidden" id="aids-appliances-details">
+		          <p class="form-label" for="aids-appliances-details">Tell us what type they are and how you use them</p>
+		          <textarea type="text" class="form-control-3-4"></textarea> 
+		       	</div>
+		       
+		      <div class="form-group">
+		        <p class="form-label-bold" for="feeding-tube">Do you use a feeding tube or similar device to eat and drink?</p>
+		        <p class="form-hint">This means things like a feeding tube with a rate limiting device as a delivery system or
+		        feed pump.</p>
+		        <label class="block-label" data-target="" for="feeding-tube-yes">
+		        <input id="feeding-tube-yes" type="radio" name="feeding-tube" value="Yes">
+		        Yes
+		        </label>
+		        <label class="block-label" for="feeding-tube-no">
+		        <input id="feeding-tube-no" type="radio" name="feeding-tube" value="No">
+		        No
+		        </label>  
+		      </div>
+		      
+		      <div class="form-group">
+		        <p class="form-label-bold" for="another-person">Do you need help from another person to eat and drink?</p>
+		        <p class="form-hint">This includes someone cutting your food into pieces or putting food in your mouth, supervising you to make sure you don’t choke, prompting, encouraging or reminding you to eat or drink, and helping you manage a feeding tube.</p>
+			    <label class="block-label" data-target="another-person-details" for="another-person-yes">
+			    <input id="another-person-yes" type="radio" name="another-person" value="Yes">
+			    Yes
+			    </label>
+			    <label class="block-label" for="another-person-no">
+			    <input id="another-person-no" type="radio" name="another-person" value="No">
+			    No
+			    </label>  
+			  </div>	  
+			  
+			  	<div class="panel js-hidden" id="another-person-details">
+			    <p class="form-label" for="another-person-details">Tell us what kind of help you need</p>
+			    <textarea type="text" class="form-control-3-4"></textarea> 
+			  	</div>
+			  
+			  <div class="form-group">  
+			   <label class="form-label-bold" for="eat-drink-other">Tell us more about the difficulties or help you need to eat and drink</label>
+			   <p class="form-hint"> For example, tell us:</p>
+			   <ul class="form-hint list-bullet">
+			     <li>If you can’t do this safely, as often as you need to, or in a
+			   reasonable time.</li>
+			     <!--<li>If you need help from another person, tell us what kind (for example whether they
+			   need to prompt, remind or encourage you to eat, supervise you when you eat, cut food
+			   up for you or put food and drink in your mouth).</li>-->
+			     <!--<li>If you use aids and appliances, tell us what type they are and how you use them.</li>-->
+			     <li>If your ability to eat and drink varies, tell us in what way and how often - for example
+			   telling us about good days and bad days or how it varies throughout the day.</li>
+			     <!--<li>If you can do it but it takes you a long time.</li>-->
+			     <li>If you have side effects from carrying out the activity - either during or after the activity like pain, breathlessness or tiredness.</li>
+			   </ul>
+			   <textarea type="text" class="eat-drink-other form-control-3-4"></textarea>    
+			  </div>
+		    
+		    </fieldset>
+		     
+		  </div> 
+		     
+		  <!-- Primary buttons, secondary links -->
+		  <div class="form-group">
+		    <input type="submit" class="button" value="Continue">
+		  </div>
+		
+		  </form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
 	</div>
-	
-	</fieldset>
-     
-    <!--js-hidden / details-->
-    
-    <div class="panel-indent js-hidden" id="eating-drinking-details">
-     
-      <fieldset class="inline">
-       
-      <div class="form-group">
-        <p class="form-label-bold" for="aids-appliances">Do you use an aid or appliances to eat and drink?</p>
-        <p class="form-hint">For example, adapted cutlery.</p>
-        <label class="block-label" data-target="aids-appliances-details" for="aids-appliances-yes">
-        <input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
-        Yes
-        </label>
-        <label class="block-label" for="aids-appliances-no">
-        <input id="aids-appliances-no" type="radio" name="aids-appliances" value="No">
-        No
-        </label>  
-      </div>  
-              
-      	<div class="panel js-hidden" id="aids-appliances-details">
-          <p class="form-label" for="aids-appliances-details">Tell us what type they are and how you use them</p>
-          <textarea type="text" class="form-control-3-4"></textarea> 
-       	</div>
-       
-      <div class="form-group">
-        <p class="form-label-bold" for="feeding-tube">Do you use a feeding tube or similar device to eat and drink?</p>
-        <p class="form-hint">This means things like a feeding tube with a rate limiting device as a delivery system or
-        feed pump.</p>
-        <label class="block-label" data-target="" for="feeding-tube-yes">
-        <input id="feeding-tube-yes" type="radio" name="feeding-tube" value="Yes">
-        Yes
-        </label>
-        <label class="block-label" for="feeding-tube-no">
-        <input id="feeding-tube-no" type="radio" name="feeding-tube" value="No">
-        No
-        </label>  
-      </div>
-      
-      <div class="form-group">
-        <p class="form-label-bold" for="another-person">Do you need help from another person to eat and drink?</p>
-        <p class="form-hint">This includes someone cutting your food into pieces or putting food in your mouth, supervising you to make sure you don’t choke, prompting, encouraging or reminding you to eat or drink, and helping you manage a feeding tube.</p>
-	    <label class="block-label" data-target="another-person-details" for="another-person-yes">
-	    <input id="another-person-yes" type="radio" name="another-person" value="Yes">
-	    Yes
-	    </label>
-	    <label class="block-label" for="another-person-no">
-	    <input id="another-person-no" type="radio" name="another-person" value="No">
-	    No
-	    </label>  
-	  </div>	  
-	  
-	  	<div class="panel js-hidden" id="another-person-details">
-	    <p class="form-label" for="another-person-details">Tell us what kind of help you need</p>
-	    <textarea type="text" class="form-control-3-4"></textarea> 
-	  	</div>
-	  
-	  <div class="form-group">  
-	   <label class="form-label-bold" for="eat-drink-other">Tell us more about the difficulties or help you need to eat and drink</label>
-	   <p class="form-hint"> For example, tell us:</p>
-	   <ul class="form-hint list-bullet">
-	     <li>If you can’t do this safely, as often as you need to, or in a
-	   reasonable time.</li>
-	     <!--<li>If you need help from another person, tell us what kind (for example whether they
-	   need to prompt, remind or encourage you to eat, supervise you when you eat, cut food
-	   up for you or put food and drink in your mouth).</li>-->
-	     <!--<li>If you use aids and appliances, tell us what type they are and how you use them.</li>-->
-	     <li>If your ability to eat and drink varies, tell us in what way and how often - for example
-	   telling us about good days and bad days or how it varies throughout the day.</li>
-	     <!--<li>If you can do it but it takes you a long time.</li>-->
-	     <li>If you have side effects from carrying out the activity - either during or after the activity like pain, breathlessness or tiredness.</li>
-	   </ul>
-	   <textarea type="text" class="eat-drink-other form-control-3-4"></textarea>    
-	  </div>
-    
-    </fieldset>
-     
-  </div> 
-     
-  <!-- Primary buttons, secondary links -->
-  <div class="form-group">
-    <input type="submit" class="button" value="Continue">
-  </div>
-
-</form>
 
 </main><!-- / #page-container -->
 {{/content}}
