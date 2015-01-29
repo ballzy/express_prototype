@@ -13,90 +13,98 @@
 {{$content}}
 <main id="page-container" role="main">
 
-{{>includes/phase_banner}}
+	{{>includes/phase_banner}}
+	<div class="grid-row">
+		<div class="column-two-thirds">
 
-  <form action="s6.html" method="#" class="form">
-  
-  	<a href="s4.html" class="example-back-link">Back</a>
-  
-  	<div class="section-progress">
-  	    Step 5 of 17
-  	</div>
-
-    <h1 class="form-title heading-large">
-      <!--Hospital, hospice, residential or nursing care-->
-      Your health conditions or disabilities
-    </h1>
-    
-    <!-- health conditions or disabilities -->
-    <div class="form-group">  
-      <label class="form-label-bold" for="health-conditions">What are your health conditions or disabilities?</label>
-      <p class="form-hint">Tell us about your conditions and explain when these started.</p>  
-      <textarea type="text" class="health-conditions form-control-3-4"></textarea>    
-   </div>    
-         
-    <!-- tablets/medication  -->
-    <fieldset class="inline">
-   
-    <legend class="form-label-bold add-padding" for="health-tablets-medication">Do you take any tablets or medication?</legend>
-    
-    <!--<p class="form-hint">Xxx</p>-->
-    
-	<div class="form-group">
-	  <label class="block-label" data-target="health-tablets-medication-details" for="health-tablets-medication-yes">
-	  <input id="health-tablets-medication-yes" type="radio" name="health-tablets-medication" value="Yes">
-	  Yes
-	</label>
-	<label class="block-label" for="health-tablets-medication-no">
-	  <input id="health-tablets-medication-no" type="radio" name="health-tablets-medication" value="No">
-	  No
-	</label>  
-	</div
-     
-     <!--js-hidden-->
-     <div class="panel-indent js-hidden" id="health-tablets-medication-details">
-         <label class="form-label" for="health-tablets-medication-details">Details of your tablets and/or medication</label>
-         <p class="form-hint">Include details of any side effects.</p>
-         <textarea type="text" class="health-tablets-medication-details form-control-3-4"></textarea>
-     </div>
-    
-    </fieldset>
-    
-     <!-- tablets/medication  -->
-     <fieldset class="inline">
-    
-     <legend class="form-label-bold" for="health-treatment">Are you undergoing treatment or have any treatments planned?</legend>
-     
-     <p class="form-hint">For example, chemotherapy, physiotherapy or dialysis.</p>
-     
-     <!--<p class="form-hint">Xxx</p>-->
-     
-    	<div class="form-group">
-    	  <label class="block-label" data-target="health-treatment-details" for="health-treatment-yes">
-    	  <input id="health-treatment-yes" type="radio" name="health-treatment" value="Yes">
-    	  Yes
-    	</label>
-    	<label class="block-label" for="health-treatment-no">
-    	  <input id="health-treatment-no" type="radio" name="health-treatment" value="No">
-    	  No
-    	</label>  
-    	</div
-      
-      <!--js-hidden-->
-      <div class="panel-indent js-hidden" id="health-treatment-details">
-          <label class="form-label" for="health-treatment-details">Details of your treatment</label>
-          <p class="form-hint">Include details of any side effects.</p>
-          <textarea type="text" class="health-treatment-details form-control-3-4"></textarea>
-      </div>
-     
-     </fieldset>
-
-    <!-- Primary buttons, secondary links -->
-    <div class="form-group">
-      <input type="submit" class="button" value="Continue">
-    </div>
-
-  </form>
+		  <form action="s6.html" method="#" class="form">
+		  
+		  	<a href="s4.html" class="example-back-link">Back</a>
+		  
+		  	<div class="section-progress">
+		  	    Step 5 of 17
+		  	</div>
+		
+		    <h1 class="form-title heading-large">
+		      <!--Hospital, hospice, residential or nursing care-->
+		      Your health conditions or disabilities
+		    </h1>
+		    
+		    <!-- health conditions or disabilities -->
+		    <div class="form-group">  
+		      <label class="form-label-bold" for="health-conditions">What are your health conditions or disabilities?</label>
+		      <p class="form-hint">Tell us about your conditions and explain when these started.</p>  
+		      <textarea type="text" class="health-conditions form-control-3-4"></textarea>    
+		   </div>    
+		         
+		    <!-- tablets/medication  -->
+		    <fieldset class="inline">
+		   
+		    <legend class="form-label-bold add-padding" for="health-tablets-medication">Do you take any tablets or medication?</legend>
+		    
+		    <!--<p class="form-hint">Xxx</p>-->
+		    
+			<div class="form-group">
+			  <label class="block-label" data-target="health-tablets-medication-details" for="health-tablets-medication-yes">
+			  <input id="health-tablets-medication-yes" type="radio" name="health-tablets-medication" value="Yes">
+			  Yes
+			</label>
+			<label class="block-label" for="health-tablets-medication-no">
+			  <input id="health-tablets-medication-no" type="radio" name="health-tablets-medication" value="No">
+			  No
+			</label>  
+			</div
+		     
+		     <!--js-hidden-->
+		     <div class="panel-indent js-hidden" id="health-tablets-medication-details">
+		         <label class="form-label" for="health-tablets-medication-details">Details of your tablets and/or medication</label>
+		         <p class="form-hint">Include details of any side effects.</p>
+		         <textarea type="text" class="health-tablets-medication-details form-control-3-4"></textarea>
+		     </div>
+		    
+		    </fieldset>
+		    
+		     <!-- tablets/medication  -->
+		     <fieldset class="inline">
+		    
+		     <legend class="form-label-bold" for="health-treatment">Are you undergoing treatment or have any treatments planned?</legend>
+		     
+		     <p class="form-hint">For example, chemotherapy, physiotherapy or dialysis.</p>
+		     
+		     <!--<p class="form-hint">Xxx</p>-->
+		     
+		    	<div class="form-group">
+		    	  <label class="block-label" data-target="health-treatment-details" for="health-treatment-yes">
+		    	  <input id="health-treatment-yes" type="radio" name="health-treatment" value="Yes">
+		    	  Yes
+		    	</label>
+		    	<label class="block-label" for="health-treatment-no">
+		    	  <input id="health-treatment-no" type="radio" name="health-treatment" value="No">
+		    	  No
+		    	</label>  
+		    	</div
+		      
+		      <!--js-hidden-->
+		      <div class="panel-indent js-hidden" id="health-treatment-details">
+		          <label class="form-label" for="health-treatment-details">Details of your treatment</label>
+		          <p class="form-hint">Include details of any side effects.</p>
+		          <textarea type="text" class="health-treatment-details form-control-3-4"></textarea>
+		      </div>
+		     
+		     </fieldset>
+		
+		    <!-- Primary buttons, secondary links -->
+		    <div class="form-group">
+		      <input type="submit" class="button" value="Continue">
+		    </div>
+		
+		  </form>
+		  
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
 
 </main><!-- / #page-container -->
 {{/content}}
