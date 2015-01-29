@@ -13,44 +13,50 @@
 {{$content}}
 <main id="page-container" role="main">
 
-{{>includes/phase_banner}}
-
-  <form action="pay-details.html" method="#" class="form">
-  
-  	<a href="s17.html" class="example-back-link">Back</a>
-
-    <h1 class="form-title heading-large">
-      Consent
-    </h1>
-    
-    <!-- terminal illness -->
-    <fieldset class="inline">
-    
-      <legend class="form-label-bold add-padding" for="consent">Do you agree to us contacting any health care professionals you have told us about?</legend>
-    
-      <div class="form-group"><!-- 'form-group-compound' -->	
-        <label class="block-label" for="consent-yes">
-        <input id="consent-yes" type="radio" name="consent" value="Yes">
-        Yes
-      </label>
-      <label class="block-label" for="consent-no">
-        <input id="consent-no" type="radio" name="consent" value="No">
-        No
-      </label>
-      
-    </fieldset>
-      
-    
-    <!-- Primary buttons, secondary links -->
-    <div class="form-group">
-      <input type="submit" class="button" value="Continue">
-      <!--<ul>
-        <li><a href="/">Back</a></li>
-      </ul>-->
-    </div>
-
-  </form>
-
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+		
+			<form action="pay-details.html" method="#" class="form">
+			
+				<a href="s17.html" class="example-back-link">Back</a>
+				
+				<h1 class="form-title heading-large">
+				Consent
+				</h1>
+				
+				<!-- terminal illness -->
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold add-padding" for="consent">Do you agree to us contacting any health care professionals you have told us about?</legend>
+					
+					<div class="form-group"><!-- 'form-group-compound' -->	
+						<label class="block-label" for="consent-yes">
+							<input id="consent-yes" type="radio" name="consent" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="consent-no">
+							<input id="consent-no" type="radio" name="consent" value="No">
+							No
+						</label>
+					</div>
+				</fieldset>
+				
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+	
 </main><!-- / #page-container -->
 {{/content}}
 
