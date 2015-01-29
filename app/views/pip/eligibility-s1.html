@@ -13,67 +13,67 @@
 {{$content}}
 <main id="page-container" role="main">
 
-  {{>includes/phase_banner}}
+	{{>includes/phase_banner}}
   	<div class="grid-row">
 		<div class="column-two-thirds">
 
-		  <form action="eligibility-s2.html" method="#" class="form">
-		  
-		  	<a href="start.html" class="example-back-link">Back</a>
-		
-		    <h1 class="form-title heading-large">
-		      Can you get Personal Independence Payment?
-		    </h1>
-		    
-		    <!-- dla -->
-		    <fieldset class="inline">
-		    
-		    <legend class="form-label-bold add-padding" for="eligibility-q1">Do you get Disability Living Allowance?</legend>
-		    
-		      <div class="form-group"><!-- 'form-group-compound' -->	
-		        <label class="block-label" data-target="gets-dla" for="eligibility-q1-yes">
-		        <input id="eligibility-q1-yes" type="radio" name="eligibility-q1" value="Yes">
-		        Yes
-		        </label>
-		        <label class="block-label" data-target="validation-continue" for="eligibility-q1-no">
-		        <input id="eligibility-q1-no" type="radio" name="eligibility-q1" value="No">
-		        No
-		        </label>
-		      </div>
-		      
-		      <!--js-hidden-->
-		      <div class="js-hidden" id="gets-dla"><!-- panel-indent -->
-		          <label class="form-label-bold" for="dla-letter">Have you been asked to make a claim for Personal Independence Payment?</label>
-		          <p class="form-hint">You would have received a letter from the Department for Work and Pensions asking you to make a new claim.</p>
-		          <div class="form-group"><!-- 'form-group-compound' -->	
-		            <label class="block-label" data-target="validation-continue" for="dla-lettter-yes">
-		            <input id="dla-lettter-yes" type="radio" name="dla-letter" value="Yes">
-		            Yes
-		            </label>
-		            <label class="block-label" for="dla-lettter-no" data-target="validation-q2-no">
-		            <input id="dla-lettter-no" type="radio" name="dla-letter" value="No">
-		            No
-		            </label>
-		          </div>
-		      </div>
-		    </fieldset>
-		    
-		    <div class="js-hidden" id="validation-q2-no">
-		    
-			    <div class="form-group">
-			      <h3 class="heading-medium">You don't need to make a claim for Personal Independence Payment</h3>
-			      <p>Wait until you receive a letter from the Department for Work and Pensions asking you to make a new claim.</p>
-			    </div>
-			    
-			 <p><a href="start.html" class="button">Finished</a></p>
-			    
-		    </div>
-		        
-		    <div class="js-hidden form-group" id="validation-continue">
-		      <input type="submit" class="button" value="Continue">
-		    </div>
-		
-		  </form>
+			<form action="eligibility-s2.html" method="#" class="form">
+			
+				<a href="start.html" class="example-back-link">Back</a>
+				
+				<h1 class="form-title heading-large">
+				Can you get Personal Independence Payment?
+				</h1>
+				
+				<!-- dla -->
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold add-padding" for="eligibility-q1">Do you get Disability Living Allowance?</legend>
+					
+					<div class="form-group"><!-- 'form-group-compound' -->	
+						<label class="block-label" data-target="gets-dla" for="eligibility-q1-yes">
+							<input id="eligibility-q1-yes" type="radio" name="eligibility-q1" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" data-target="validation-continue" for="eligibility-q1-no">
+							<input id="eligibility-q1-no" type="radio" name="eligibility-q1" value="No">
+							No
+						</label>
+					</div>
+					
+					<!--js-hidden-->
+					<div class="js-hidden" id="gets-dla"><!-- panel-indent -->
+						<label class="form-label-bold" for="dla-letter">Have you been asked to make a claim for Personal Independence Payment?</label>
+						<p class="form-hint">You would have received a letter from the Department for Work and Pensions asking you to make a new claim.</p>
+						<div class="form-group"><!-- 'form-group-compound' -->	
+							<label class="block-label" data-target="validation-continue" for="dla-lettter-yes">
+								<input id="dla-lettter-yes" type="radio" name="dla-letter" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="dla-lettter-no" data-target="validation-q2-no">
+								<input id="dla-lettter-no" type="radio" name="dla-letter" value="No">
+								No
+							</label>
+						</div>
+					</div>
+				</fieldset>
+				
+				<div class="js-hidden" id="validation-q2-no">
+				
+					<div class="form-group">
+						<h3 class="heading-medium">You don't need to make a claim for Personal Independence Payment</h3>
+						<p>Wait until you receive a letter from the Department for Work and Pensions asking you to make a new claim.</p>
+					</div>
+				
+					<p><a href="start.html" class="button">Finished</a></p>
+				
+				</div>
+				
+				<div class="js-hidden form-group" id="validation-continue">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
 		  
 		</div>
 		<div class="column-third">
