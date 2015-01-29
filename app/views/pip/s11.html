@@ -13,48 +13,57 @@
 {{$content}}
 <main id="page-container" role="main">
 
-{{>includes/phase_banner}}
-
-  <form action="s12.html" method="#" class="form">
-  
-  	<a href="s10.html" class="example-back-link">Back</a>
-  
-  	<div class="section-progress">
-  	    Step 11 of 17
-  	</div>
-
-    <h1 class="form-title heading-large">
-      Your day-to-day activities - dressing and undressing 
-    </h1>
-    
-	 <fieldset class="inline">
+	{{>includes/phase_banner}}
 	
-	 <legend class="form-label-bold" for="preparing-food">Do you need any help to dress or undress yourself?</legend>
-	 
-	 <p class="form-hint">This means puting on and taking of appropriate clothes, including shoes and socks, knowing when to put on or take of clothes, and being able to select clothes that are appropriate.</p>
-	 
-		<div class="form-group">
-		  <label class="block-label" data-target="guard-question-details" for="guard-question-yes">
-		  <input id="guard-question-yes" type="radio" name="guard-question" value="Yes">
-		  Yes
-		</label>
-		<label class="block-label" for="guard-question-no">
-		  <input id="guard-question-no" type="radio" name="guard-question" value="No">
-		  No
-		</label>  
+	<div class="grid-row">
+		<div class="column-two-thirds">
+		
+			<form action="s12.html" method="#" class="form">
+			
+				<a href="s10.html" class="example-back-link">Back</a>
+			
+				<div class="section-progress">
+				Step 11 of 17
+				</div>
+			
+				<h1 class="form-title heading-large">
+				Your day-to-day activities - dressing and undressing 
+				</h1>
+			
+				<fieldset class="inline">
+			
+					<legend class="form-label-bold" for="preparing-food">Do you need any help to dress or undress yourself?</legend>
+			
+					<p class="form-hint">This means putting on and taking of appropriate clothes, including shoes and socks, knowing when to put on or take of clothes, and being able to select clothes that are appropriate.</p>
+			
+					<div class="form-group">
+						<label class="block-label" data-target="guard-question-details" for="guard-question-yes">
+							<input id="guard-question-yes" type="radio" name="guard-question" value="Yes">
+					Yes
+						</label>
+						<label class="block-label" for="guard-question-no">
+							<input id="guard-question-no" type="radio" name="guard-question" value="No">
+					No
+						</label>  
+					</div>
+			
+				</fieldset>
+			 
+			
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
 		</div>
 		
-	</fieldset>
-     
-  </div> 
-     
-  <!-- Primary buttons, secondary links -->
-  <div class="form-group">
-    <input type="submit" class="button" value="Continue">
-  </div>
-
-</form>
-
+		<div class="column-third">
+			
+		</div>
+	</div>
+	
 </main><!-- / #page-container -->
 {{/content}}
 

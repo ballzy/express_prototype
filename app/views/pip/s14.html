@@ -13,48 +13,55 @@
 {{$content}}
 <main id="page-container" role="main">
 
-{{>includes/phase_banner}}
-
-  <form action="s15.html" method="#" class="form">
-  
-  	<a href="s13.html" class="example-back-link">Back</a>
-  
-  	<div class="section-progress">
-  	    Step 14 of 17
-  	</div>
-
-    <h1 class="form-title heading-large">
-      Your day-to-day activities - mixing with other people 
-    </h1>
-    
-	 <fieldset class="inline">
+	{{>includes/phase_banner}}
 	
-	 <legend class="form-label-bold" for="preparing-food">Do you have any difficulties mixing with other people?</legend>
-	 
-	 <p class="form-hint">This means how well you are able to get on with other people, understand how they’re behaving towards you and behave appropriately to them. It includes both people you know well and people you don’t know.</p>
-	 
-		<div class="form-group">
-		  <label class="block-label" data-target="guard-question-details" for="guard-question-yes">
-		  <input id="guard-question-yes" type="radio" name="guard-question" value="Yes">
-		  Yes
-		</label>
-		<label class="block-label" for="guard-question-no">
-		  <input id="guard-question-no" type="radio" name="guard-question" value="No">
-		  No
-		</label>  
-		</div>
+	<div class="grid-row">
+		<div class="column-two-thirds">
 		
-	</fieldset>
-     
-  </div> 
-     
-  <!-- Primary buttons, secondary links -->
-  <div class="form-group">
-    <input type="submit" class="button" value="Continue">
-  </div>
-
-</form>
-
+			<form action="s15.html" method="#" class="form">
+			
+				<a href="s13.html" class="example-back-link">Back</a>
+				
+				<div class="section-progress">
+				Step 14 of 17
+				</div>
+				
+				<h1 class="form-title heading-large">
+				Your day-to-day activities - mixing with other people 
+				</h1>
+				
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold" for="preparing-food">Do you have any difficulties mixing with other people?</legend>
+					
+					<p class="form-hint">This means how well you are able to get on with other people, understand how they’re behaving towards you and behave appropriately to them. It includes both people you know well and people you don’t know.</p>
+					
+					<div class="form-group">
+						<label class="block-label" data-target="guard-question-details" for="guard-question-yes">
+							<input id="guard-question-yes" type="radio" name="guard-question" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="guard-question-no">
+							<input id="guard-question-no" type="radio" name="guard-question" value="No">
+							No
+						</label>  
+					</div>
+				
+				</fieldset>
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+	
 </main><!-- / #page-container -->
 {{/content}}
 
