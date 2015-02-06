@@ -67,11 +67,6 @@
 							</label>  
 						</div>
 						
-						<div class="panel js-hidden" id="aids-appliances-details">
-							<p class="form-label" for="aids-appliances-details">Tell us what type they are and how you use them</p>
-							<textarea type="text" class="form-control-3-4"></textarea> 
-						</div>
-						
 						<div class="form-group">
 							<p class="form-label-bold" for="another-person">Do you need help from another person to prepare or cook a simple meal?</p>
 							<p class="form-hint">Help includes someone physically assisting you, cooking food for you, supervising you to make sure you are safe, and 
@@ -86,22 +81,95 @@
 							</label>  
 						</div>
 						
-						<div class="panel js-hidden" id="another-person-details">
-							<p class="form-label" for="another-person-details">Tell us what kind of help you need</p>
-							<textarea type="text" class="form-control-3-4"></textarea> 
+						<div class="form-group">
+							<p class="form-label-bold" for="another-person">Can you use a conventional oven to cook a simple meal?</p>
+							
+							<label class="block-label" data-target="another-person-details" for="another-person-yes">
+								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="another-person-no">
+								<input id="another-person-no" type="radio" name="another-person" value="No">
+								No
+							</label>  
 						</div>
 						
-						<div class="form-group">  
-							<label class="form-label-bold" for="cook-other">Tell us more about the difficulties or help you need to prepare food</label>
-							<p class="form-hint"> For example, tell us:</p>
-							<ul class="form-hint list-bullet">
-								<li>If you can't do this safely, as often as you need to, or in a reasonable time.</li>
-								<li>If you can only cook using a microwave.</li>
-								<li>If your ability to do it varies, tell us in what way and how often - for example, telling us about good and bad days or how it varies throughout the day.</li>
-								<!--<li>If you can do it but it takes you a long time.</li>-->
-								<li>If you have side effects from carrying out the activity - either during or after the activity - like pain, breathlessness or tiredness.</li>
-							</ul>
-							<textarea type="text" class="cook-other form-control-3-4"></textarea>
+						<div class="form-group">
+							<p class="form-label-bold" for="another-person">Can you use a microwave to cook a simple meal?</p>
+		
+							<label class="block-label" data-target="another-person-details" for="another-person-yes">
+								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="another-person-no">
+								<input id="another-person-no" type="radio" name="another-person" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="form-group">
+							<p class="form-label-bold" for="another-person">Do you sometimes have accidents in the kitchen when you are cooking?</p>
+							<p class="form-hint">Only answer Yes if these accidents affect your safety</p>
+							<label class="block-label" data-target="another-person-details" for="another-person-yes">
+								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="another-person-no">
+								<input id="another-person-no" type="radio" name="another-person" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="form-group">
+							<p class="form-label-bold" for="another-person">Are you able to prepare a meal with fresh food?</p>
+							<p class="form-hint">Preparation involves peeling, chopping or opening a can</p>
+							<label class="block-label" data-target="another-person-details" for="another-person-yes">
+								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="another-person-no">
+								<input id="another-person-no" type="radio" name="another-person" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="form-group">
+							<p class="form-label-bold" for="another-person">Do you need prompting, encouraging or reminding you to cook a simple meal?</p>
+							<label class="block-label" data-target="another-person-details" for="another-person-yes">
+								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="another-person-no">
+								<input id="another-person-no" type="radio" name="another-person" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="form-group">
+							<p class="form-label-bold" for="another-person">Does it take you a long time to cook a simple meal?</p>
+							<label class="block-label" data-target="another-person-details" for="another-person-yes">
+								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="another-person-no">
+								<input id="another-person-no" type="radio" name="another-person" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="form-group">
+							<p class="form-label-bold" for="another-person">Do you have any side effects from carrying out the activity - either during or after the activity?</p>
+							<p class="form-hint">Side effects might include pain, breathlessness or tiredness.</p>
+							<label class="block-label" data-target="another-person-details" for="another-person-yes">
+								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="another-person-no">
+								<input id="another-person-no" type="radio" name="another-person" value="No">
+								No
+							</label>  
+						</div>
+						
 						</div>  
 					
 					</fieldset>
