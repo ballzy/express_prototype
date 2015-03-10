@@ -1,0 +1,208 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+
+			<form action="pip2.html" method="#" class="form">
+			
+				<a href="guard-page.html" class="example-back-link">Back</a>
+				
+				<div class="section-progress">
+				Step 2 of 5
+				</div>
+				
+				<h1 class="form-title heading-large">
+				Preparing and cooking a meal
+				</h1>
+				<ul>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold add-padding" for="preparing-meal">How often do you find it impossible to prepare and cook a meal?</legend>
+							
+							<div class="form-group">
+								<label class="block-label" for="preparing-meal-everyday">
+									<input id="preparing-meal-everyday" type="radio" name="preparing-meal" value="Everyday">
+									Everyday
+								</label>
+								<label class="block-label" for="preparing-meal-2or3">
+									<input id="preparing-meal-2or3" type="radio" name="preparing-meal" value="2 or 3 times a week">
+									2 or 3 times a week
+								</label> 
+								<label class="block-label" for="preparing-meal-occasionally">
+									<input id="preparing-meal-occasionally" type="radio" name="preparing-meal" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" for="preparing-meal-never">
+									<input id="preparing-meal-never" type="radio" name="preparing-meal" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold" for="conventional-cooker">How often are you able to cook a meal using a conventional cooker?</legend>
+
+							<p class="hint-text">By 'conventional cooker' we mean an oven or a hob, not a microwave</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="conventional-cooker-everyday">
+									<input id="conventional-cooker-everyday" type="radio" name="conventional-cooker" value="Everyday">
+									Everyday
+								</label>
+								<label class="block-label" for="conventional-cooker-2or3">
+									<input id="conventional-cooker-2or3" type="radio" name="conventional-cooker" value="2 or 3 times a week">
+									2 or 3 times a week
+								</label> 
+								<label class="block-label" for="conventional-cooker-occasionally">
+									<input id="conventional-cooker-occasionally" type="radio" name="conventional-cooker" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" for="conventional-cooker-never">
+									<input id="conventional-cooker-never" type="radio" name="conventional-cooker" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold add-padding" for="microwave">How often are you able to cook a meal using a microwave?</legend>
+							
+							<div class="form-group">
+								<label class="block-label" for="microwave-everyday">
+									<input id="microwave-everyday" type="radio" name="microwave" value="Everyday">
+									Everyday
+								</label>
+								<label class="block-label" for="microwave-2or3">
+									<input id="microwave-2or3" type="radio" name="microwave" value="2 or 3 times a week">
+									2 or 3 times a week
+								</label> 
+								<label class="block-label" for="microwave-occasionally">
+									<input id="microwave-occasionally" type="radio" name="microwave" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" for="microwave-never">
+									<input id="microwave-never" type="radio" name="microwave" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold" for="prompt">How often do you forget to cook for yourself?</legend>
+
+							<p class="hint-text">Do you need someone to prompt you to help you remember to cook a meal?</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="prompt-everyday">
+									<input id="prompt-everyday" type="radio" name="prompt" value="Everyday">
+									Everyday
+								</label>
+								<label class="block-label" for="prompt-2or3">
+									<input id="prompt-2or3" type="radio" name="prompt" value="2 or 3 times a week">
+									2 or 3 times a week
+								</label> 
+								<label class="block-label" for="prompt-occasionally">
+									<input id="prompt-occasionally" type="radio" name="prompt" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" for="prompt-never">
+									<input id="prompt-never" type="radio" name="prompt" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold add-padding" for="supervision">How often do you require supervision or assistance to cook a meal?</legend>
+							
+							<div class="form-group">
+								<label class="block-label" for="supervision-everyday">
+									<input id="supervision-everyday" type="radio" name="supervision" value="Everyday">
+									Everyday
+								</label>
+								<label class="block-label" for="supervision-2or3">
+									<input id="supervision-2or3" type="radio" name="supervision" value="2 or 3 times a week">
+									2 or 3 times a week
+								</label> 
+								<label class="block-label" for="supervision-occasionally">
+									<input id="supervision-occasionally" type="radio" name="supervision" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" for="supervision-never">
+									<input id="supervision-never" type="radio" name="supervision" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+
+				</ul>
+
+				<div class="form-group">
+					<p class="form-label-bold" for="another-person">Please tell us more information about the difficulties or help you need to prepare and cook food</p>
+					<details>
+						<summary><span class="summary">Help for this part of the form</span></summary>
+						<div class="panel-indent">
+							<p>Tell us more about:</p>
+							<ul class="list-bullet">
+								<li>If you can't do this safely, to an acceptable standard, as often as you need to and in a reasonable time.</li>
+								<li>If you need help from another person, tell us what kind (for example whether they need to remind or motivate you to cook, plan the task for you, supervise you while you are doing it, physically help you or prepare all your food for you).</li>
+								<li>If you use aids and appliances, tell us what type they are and how you use them.</li>
+								<li>If you can only cook using a microwave.</li>
+								<li>If your ability to do it varies, tell us in what way and how often - for example, telling us about good and bad days or how it varies throughout the day.</li>
+								<li>If you can do it but it takes you a long time</li>
+								<li>if you have side effects from carrying out the activity - either during or after the activity - like pain, breathlessness or tiredness.</li>
+							</ul>
+						</div>
+					</details>
+					<textarea type="text" class="form-control-3-4"></textarea>  
+				</div>
+
+				
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
