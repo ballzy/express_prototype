@@ -29,84 +29,299 @@
 				<h1 class="form-title heading-large">
 				Your day-to-day activities
 				</h1>
-				
-				<fieldset class="inline">
-				
-					<legend class="form-label-bold" for="preparing-food">Do you need any help to prepare a simple meal for one from fresh ingredients?</legend>
-					<p class="form-hint">This includes food preparation such as peeling, chopping or opening a can, and safely cooking or heating food on a cooker hob or in a microwave oven.</p>
+				<ul>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold" for="preparing-food">Do you need any help to prepare a simple meal for one from fresh ingredients?</legend>
+							
+							<p class="form-hint">This includes food preparation such as peeling, chopping or opening a can, and safely cooking or heating food on a cooker hob or in a microwave oven.</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="preparing-food-yes">
+									<input id="preparing-food-yes" type="radio" name="preparing-food" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="preparing-food-no">
+									<input id="preparing-food-no" type="radio" name="preparing-food" value="No">
+									No
+								</label>  
+								<label class="block-label" for="preparing-food-dontknow">
+									<input id="preparing-food-dontknow" type="radio" name="preparing-food" value="I dont know">
+									I don't know
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold" for="eating-drinking">Do you need any help to eat and drink?</legend>
+							
+							<p class="form-hint">This means remembering when to eat, cutting food into pieces, putting food and drink in the mouth, and chewing and swallowing food and drink.</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="eating-drinking-yes">
+									<input id="eating-drinking-yes" type="radio" name="eating-drinking" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="eating-drinking-no">
+									<input id="eating-drinking-no" type="radio" name="eating-drinking" value="No">
+									No
+								</label>  
+								<label class="block-label" for="eating-drinking-dontknow">
+									<input id="eating-drinking-dontknow" type="radio" name="eating-drinking" value="I dont know">
+									I don't know
+								</label> 
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold" for="manage-treatments">Do you need to monitor changes in your health condition, take medication
+							or manage any treatments carried out at home?</legend>
+							
+							<p class="form-hint">Monitoring changes includes monitoring blood sugar level, changes in mental state and pain levels. Home treatments include things like physiotherapy and home dialysis, regardless of whether these are NHS or private.</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="manage-treatments-yes">
+									<input id="manage-treatments-yes" type="radio" name="manage-treatments" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="manage-treatments-no">
+									<input id="manage-treatments-no" type="radio" name="manage-treatments" value="No">
+									No
+								</label>  
+								<label class="block-label" for="manage-treatments-dontknow">
+									<input id="manage-treatments-dontknow" type="radio" name="manage-treatments" value="I dont know">
+									I don't know
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold" for="washing-bathing">Do you need any help washing and bathing to keep your body clean?</legend>
+							
+							<p class="form-hint">This means things like washing your body, limbs, face, underarms and hair, and using a normal bath or shower.</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="washing-bathing-yes">
+									<input id="washing-bathing-yes" type="radio" name="washing-bathing" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="washing-bathing-no">
+									<input id="washing-bathing-no" type="radio" name="washing-bathing" value="No">
+									No
+								</label> 
+								<label class="block-label" for="washing-bathing-dontknow">
+									<input id="washing-bathing-dontknow" type="radio" name="washing-bathing" value="I dont know">
+									I don't know
+								</label>  
+							</div>
+						
+						</fieldset>  
+					</li>
+					<li>
+						<fieldset class="inline">
 					
-					<div class="form-group">
-						<label class="block-label" data-target="preparing-food-details" for="preparing-food-yes">
-							<input id="preparing-food-yes" type="radio" name="preparing-food" value="Yes">
-							Yes
-						</label>
-						<label class="block-label" for="preparing-food-no">
-							<input id="preparing-food-no" type="radio" name="preparing-food" value="No">
-							No
-						</label>  
-					</div>
-				
-				</fieldset>
-				
-				<!--js-hidden / details-->
-				
-				<div class="panel-indent js-hidden" id="preparing-food-details">
-				
-					<fieldset class="inline">
+							<legend class="form-label-bold" for="toilet">Do you need any help to go to the toilet or to manage incontinence?</legend>
+							 
+							<p class="form-hint">Go to the toilet means being able to get on and/or of a normal toilet, and cleaning yourself after using the toilet. Manage incontinence means emptying your bowel and bladder, including if you need a collecting device such as a bottle, bucket or catheter.</p>
+							 
+							<div class="form-group">
+								<label class="block-label" for="toilet-yes">
+									<input id="toilet-yes" type="radio" name="toilet" value="Yes">
+								  	Yes
+								</label>
+								<label class="block-label" for="toilet-no">
+									<input id="toilet-no" type="radio" name="toilet" value="No">
+								  	No
+								</label>  
+								<label class="block-label" for="toilet-dontknow">
+									<input id="toilet-dontknow" type="radio" name="toilet" value="I dont know">
+								  	I don't know
+								</label>  
+							</div>
+								
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+			
+							<legend class="form-label-bold" for="dress-undress">Do you need any help to dress or undress yourself?</legend>
 					
-						<div class="form-group">
-							<p class="form-label-bold" for="aids-appliances">Do you use an aid or appliances to prepare or cook a simple meal?</p>
-							<p class="form-hint">For example, perching stools, lightweight pots and pans, easy grip handles on utensils, single lever arm taps or liquid level indicators.</p>
-							<label class="block-label" data-target="aids-appliances-details" for="aids-appliances-yes">
-								<input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
-								Yes
-							</label>
-							<label class="block-label" for="aids-appliances-no">
-								<input id="aids-appliances-no" type="radio" name="aids-appliances" value="No">
-								No
-							</label>  
-						</div>
-						
-						<div class="panel js-hidden" id="aids-appliances-details">
-							<p class="form-label" for="aids-appliances-details">Tell us what type they are and how you use them</p>
-							<textarea type="text" class="form-control-3-4"></textarea> 
-						</div>
-						
-						<div class="form-group">
-							<p class="form-label-bold" for="another-person">Do you need help from another person to prepare or cook a simple meal?</p>
-							<p class="form-hint">Help includes someone physically assisting you, cooking food for you, supervising you to make sure you are safe, and 
-							prompting, encouraging or reminding you to cook food or how to do so.</p>
-							<label class="block-label" data-target="another-person-details" for="another-person-yes">
-								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
-								Yes
-							</label>
-							<label class="block-label" for="another-person-no">
-								<input id="another-person-no" type="radio" name="another-person" value="No">
-								No
-							</label>  
-						</div>
-						
-						<div class="panel js-hidden" id="another-person-details">
-							<p class="form-label" for="another-person-details">Tell us what kind of help you need</p>
-							<textarea type="text" class="form-control-3-4"></textarea> 
-						</div>
-						
-						<div class="form-group">  
-							<label class="form-label-bold" for="cook-other">Tell us more about the difficulties or help you need to prepare food</label>
-							<p class="form-hint"> For example, tell us:</p>
-							<ul class="form-hint list-bullet">
-								<li>If you can't do this safely, as often as you need to, or in a reasonable time.</li>
-								<li>If you can only cook using a microwave.</li>
-								<li>If your ability to do it varies, tell us in what way and how often - for example, telling us about good and bad days or how it varies throughout the day.</li>
-								<!--<li>If you can do it but it takes you a long time.</li>-->
-								<li>If you have side effects from carrying out the activity - either during or after the activity - like pain, breathlessness or tiredness.</li>
-							</ul>
-							<textarea type="text" class="cook-other form-control-3-4"></textarea>
-						</div>  
+							<p class="form-hint">This means putting on and taking of appropriate clothes, including shoes and socks, knowing when to put on or take of clothes, and being able to select clothes that are appropriate.</p>
 					
-					</fieldset>
+							<div class="form-group">
+								<label class="block-label" for="dress-undress-yes">
+									<input id="dress-undress-yes" type="radio" name="dress-undress" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="dress-undress-no">
+									<input id="dress-undress-no" type="radio" name="dress-undress" value="No">
+									No
+								</label> 
+								<label class="block-label" for="dress-undress-dontknow">
+									<input id="dress-undress-dontknow" type="radio" name="dress-undress" value="I dont know">
+									I don't know
+								</label>  
+							</div>
+					
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold" for="communicate">Do you need any help to communicate with others?</legend>
+							
+							<p class="form-hint">This means speaking to people in your native vocal language, and hearing and understanding what people are saying to you in your native vocal language.</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="communicate-yes">
+									<input id="communicate-yes" type="radio" name="communicate" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="communicate-no">
+									<input id="communicate-no" type="radio" name="communicate" value="No">
+									No
+								</label>
+								<label class="block-label" for="communicate-dontknow">
+									<input id="communicate-dontknow" type="radio" name="communicate" value="I dont know">
+									I don't know
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold" for="understanding-symbols">Do you need any help to read and understand signs, symbols and words?</legend>
+							
+							<p class="form-hint">This means signs, symbols and words written or printed in your native written language
+							and doesn't include Braile.</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="understanding-symbols-yes">
+									<input id="understanding-symbols-yes" type="radio" name="understanding-symbols" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="understanding-symbols-no">
+									<input id="understanding-symbols-no" type="radio" name="understanding-symbols" value="No">
+									No
+								</label> 
+								<label class="block-label" for="understanding-symbols-dontknow">
+									<input id="understanding-symbols-dontknow" type="radio" name="understanding-symbols" value="I dont know">
+									I don't know
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold" for="mixing-people">Do you have any difficulties mixing with other people?</legend>
+							
+							<p class="form-hint">This means how well you are able to get on with other people, understand how they’re behaving towards you and behave appropriately to them. It includes both people you know well and people you don’t know.</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="mixing-people-yes">
+									<input id="mixing-people-yes" type="radio" name="mixing-people" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="mixing-people-no">
+									<input id="mixing-people-no" type="radio" name="mixing-people" value="No">
+									No
+								</label> 
+								<label class="block-label" for="mixing-people-dontknow">
+									<input id="mixing-people-dontknow" type="radio" name="mixing-people" value="I dont know">
+									I don't know
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
 				
-				</div> 
+							<legend class="form-label-bold" for="managing-money">Do you need any help to make decisions about spending and managing your money?</legend>
+
+							<p class="form-hint">Hint text...</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="managing-money-yes">
+									<input id="managing-money-yes" type="radio" name="managing-money" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="managing-money-no">
+									<input id="managing-money-no" type="radio" name="managing-money" value="No">
+									No
+								</label>  
+								<label class="block-label" for="managing-money-dontknow">
+									<input id="managing-money-dontknow" type="radio" name="managing-money" value="I dont know">
+									I don't know
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold" for="going-out">Do you need any help to work out and follow a route or have severe
+							anxiety or stress that prevents you from going out?</legend>
+							
+							<p class="form-hint">A route includes using public transport.</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="going-out-yes">
+									<input id="going-out-yes" type="radio" name="going-out" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="going-out-no">
+									<input id="going-out-no" type="radio" name="going-out" value="No">
+									No
+								</label> 
+								<label class="block-label" for="going-out-dontknow">
+									<input id="going-out-dontknow" type="radio" name="going-out" value="I dont know">
+									I don't know
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+						
+							<legend class="form-label-bold" for="moving-around">Do you need any help to physically move around?</legend>
+							
+							<p class="form-hint">Hint text…</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="moving-around-yes">
+									<input id="moving-around-yes" type="radio" name="moving-around" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="moving-around-no">
+									<input id="moving-around-no" type="radio" name="moving-around" value="No">
+									No
+								</label> 
+								<label class="block-label" for="moving-around-dontknow">
+									<input id="moving-around-dontknow" type="radio" name="moving-around" value="I dont know">
+									I don't know
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+				</ul>
 				
 				<!-- Primary buttons, secondary links -->
 				<div class="form-group">
