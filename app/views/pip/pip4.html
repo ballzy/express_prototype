@@ -36,15 +36,15 @@
 							<legend class="form-label-bold add-padding" for="decisions">How often do you need help to make decisions about spending or managing your money?</legend>
 							
 							<div class="form-group">
-								<label class="block-label" for="decisions-everyday">
+								<label class="block-label" data-target="money-details" for="decisions-everyday">
 									<input id="decisions-everyday" type="radio" name="decisions" value="Everyday">
 									Everyday
 								</label>
-								<label class="block-label" for="decisions-2or3">
+								<label class="block-label" data-target="money-details" for="decisions-2or3">
 									<input id="decisions-2or3" type="radio" name="decisions" value="2 or 3 times a week">
 									2 or 3 times a week
 								</label> 
-								<label class="block-label" for="decisions-occasionally">
+								<label class="block-label" data-target="money-details" for="decisions-occasionally">
 									<input id="decisions-occasionally" type="radio" name="decisions" value="Occasionally">
 									Occasionally
 								</label> 
@@ -56,6 +56,8 @@
 						
 						</fieldset>
 					</li>
+				</ul>
+				<ul class="js-hidden" id="money-details">
 					<li>
 						<fieldset class="inline">
 							

@@ -28,34 +28,34 @@
 				<h1 class="form-title heading-large">
 				Managing treatments 
 				</h1>
+
+				<fieldset>
 				
-				<ul>
-					<li>
-						<fieldset>
-						
-							<legend class="form-label-bold add-padding" for="monitor-health">How often do you need help to monitor your health condition, take medication or manage your treatments at home?</legend>
-							
-							<div class="form-group">
-								<label class="block-label" for="monitor-health-everyday">
-									<input id="monitor-health-everyday" type="radio" name="monitor-health" value="Everyday">
-									Everyday
-								</label>
-								<label class="block-label" for="monitor-health-2or3">
-									<input id="monitor-health-2or3" type="radio" name="monitor-health" value="2 or 3 times a week">
-									2 or 3 times a week
-								</label> 
-								<label class="block-label" for="monitor-health-occasionally">
-									<input id="monitor-health-occasionally" type="radio" name="monitor-health" value="Occasionally">
-									Occasionally
-								</label> 
-								<label class="block-label" for="monitor-health-never">
-									<input id="monitor-health-never" type="radio" name="monitor-health" value="Never">
-									Never
-								</label>  
-							</div>
-						
-						</fieldset>
-					</li>
+					<legend class="form-label-bold add-padding" for="monitor-health">How often do you need help to monitor your health condition, take medication or manage your treatments at home?</legend>
+					
+					<div class="form-group">
+						<label class="block-label" data-target="treatment-details" for="monitor-health-everyday">
+							<input id="monitor-health-everyday" type="radio" name="monitor-health" value="Everyday">
+							Everyday
+						</label>
+						<label class="block-label" data-target="treatment-details" for="monitor-health-2or3">
+							<input id="monitor-health-2or3" type="radio" name="monitor-health" value="2 or 3 times a week">
+							2 or 3 times a week
+						</label> 
+						<label class="block-label" data-target="treatment-details" for="monitor-health-occasionally">
+							<input id="monitor-health-occasionally" type="radio" name="monitor-health" value="Occasionally">
+							Occasionally
+						</label> 
+						<label class="block-label" for="monitor-health-never">
+							<input id="monitor-health-never" type="radio" name="monitor-health" value="Never">
+							Never
+						</label>  
+					</div>
+				
+				</fieldset>
+
+				
+				<ul class="js-hidden" id="treatment-details">
 					<li>
 						<fieldset class="inline">
 							
@@ -132,6 +132,9 @@
 
 						</fieldset>
 					</li>
+				</ul>
+				
+				<ul>
 					<li>
 						<fieldset>
 							<div class="form-group">  
@@ -150,6 +153,7 @@
 						</fieldset>
 					</li>	
 				</ul>
+
 
 				
 				<!-- Primary buttons, secondary links -->
