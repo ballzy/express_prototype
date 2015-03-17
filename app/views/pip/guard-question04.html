@@ -1,0 +1,83 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="guard-question05.html" method="#" class="form">
+			
+				<a href="guard-question03.html" class="example-back-link">Back</a>
+				
+				<h1 class="form-title heading-large">
+				Your day-to-day activities
+				</h1>
+				<ul>
+					<li>
+						<fieldset>
+						
+							<legend class="form-label-bold add-padding" for="bodily-functions">How often do you need help reading words or signs or communicating with people?</legend>
+
+							<p class="hint-text">By 'help' we are asking whether you use any special equipment, need someone to prompt you or physically help you to do these activities.</p>
+							
+							<div class="form-group">
+								<label class="block-label" data-target="positive" for="bodily-functions-everyday">
+									<input id="bodily-functions-everyday" type="radio" name="bodily-functions" value="Every day">
+									Every day
+								</label>
+								<label class="block-label" data-target="positive" for="bodily-functions-34times">
+									<input id="bodily-functions-34times" type="radio" name="bodily-functions" value="3 or 4 times a week">
+									3 or 4 times a week
+								</label>  
+								<label class="block-label" data-target="positive" for="bodily-functions-lessthan3">
+									<input id="bodily-functions-lessthan3" type="radio" name="bodily-functions" value="Less than 3 times a week">
+									Less than 3 times a week
+								</label>  
+								<label class="block-label" data-target="negative" for="bodily-functions-never">
+									<input id="bodily-functions-never" type="radio" name="bodily-functions" value="Never">
+									Never
+								</label> 
+							</div>
+						
+						</fieldset>
+					</li>
+				</ul>
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group js-hidden" id="negative">
+					<input type="submit" class="button" value="Continue">
+				</div>
+
+				<div class="form-group js-hidden add-padding" id="positive">
+					<p><a href="personal-details.html" class="button">Continue</a></p> 
+				</div>
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
