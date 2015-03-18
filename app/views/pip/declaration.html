@@ -15,47 +15,39 @@
 
 	{{>includes/phase_banner}}
 	
-	<form action="thank-you.html" method="#" class="form">
-	
-		<!--<a href="s4.html" class="example-back-link">Back</a>-->
-		
-		<h1 class="form-title heading-large">
-			Declaration
-		</h1>
-		
-		<div class="inner-block">
-		
-			<p>I <em class="highlight">declare</em> that the information I have given on this form is correct and complete as far as I know and believe.</p>
-			
-			<p>I <em class="highlight">understand</em> that if I knowingly give false information, my benefit may be stopped and I may be liable to prosecution or other action.</p>
-			
-			<p>I <em class="highlight">understand</em> that I must promptly tell the office that pay my <abbr title="Personal Independence Payment">PIP</abbr> of anything that may affect my entitlement to, or the amount of, that benefit.</p>
-			
-			<p>I <em class="highlight">understand</em> that the Department for Work and Pensions may use the information which it has now or in the future to decide whether I am entitled to:</p>
-			
-			<ul class="list-bullet">
-				<li>the benefit I am claiming</li>
-				<li>any other benefit I have claimed</li>
-				<li>any other benefit I may claim or be awarded in the future</li>
-			</ul>
-			
-	
-			<fieldset>
-				<p class="lede">By clicking 'I agree' you are agreeing to the above statement</p>
-				<label class="block-label" for="checkbox-1">
-					<input id="checkbox-1" type="checkbox" value="waste-animal">
-					I agree
-				</label>
-			</fieldset>
-		
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="thank-you.html" method="#" class="form">
+
+			<!--<a href="s4.html" class="example-back-link">Back</a>-->
+
+				<h1 class="form-title heading-large">
+				Declaration
+				</h1>
+
+				<p>By sending this application you agree:</p>
+				<ul class="list-bullet">
+					<li>the information in this application is complete and correct</li>
+					<li>to report any changes
+					to your circumstances</li>
+				</ul>
+
+				<div class="panel-indent">
+					<p>You could have to pay a penalty if you give false or incomplete information or don't report changes. Your Personal Independence Payment may also be stopped or reduced.
+					</p>
+				</div>
+
+				<p id="get-started" class="get-started-group">
+					<a class="button" rel="external" href"https://pip-sprint1.herokuapp.com/pip/guard-page.html"> I agree - send my application </a>
+				</p>
+
+			</form>
 		</div>
-		
-		<!-- Primary buttons, secondary links -->
-		<div class="form-group">
-			<input type="submit" class="button" value="Send Application">
+		<div class="column-third">
+			
 		</div>
-	
-	</form>
+	</div>
 
 </main><!-- / #page-container -->
 {{/content}}
