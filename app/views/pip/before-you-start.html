@@ -14,7 +14,7 @@
 <main id="page-container" role="main">
 
 	{{>includes/phase_banner}}
-	<form action="s4.html" method="#" class="form">
+	<form action="guard-question01.html" method="#" class="form">
 		<div class="grid-row sectioning">
 			<div class="column-two-thirds">
 
@@ -59,24 +59,19 @@
 		<div class="grid-row">
 			<div class="column-two-thirds">
 
-					<div class="example">
-
-					<p>To qualify for Personal Independence Payment (<abbr>PIP</abbr>) you must have an under lying condition that affects either your mobility, physicality or mental health.</p>
-
-					</div>
+					<fieldset class="inline">
 					
-					<!-- Do you or anyone in your family work or pay insurance in any of these countries?  -->
-					<fieldset>
-					
-						<legend class="form-label-bold add-padding" for="pay-insurance">Do you or anyone in your family work or pay insurance in any of these countries? </legend>
+						<legend class="form-label-bold add-padding" for="duration">Has your condition affected you for 3 months and is it expected to last at least 9 months? </legend>
+
+							<p>In order to qualify for PIP you must have a <a href="/definition-of-disability-under-equality-act-2010">long-term health condition or disability</a> that's affected you for 3 months and is expected to last at least 9 months.</p>
 						
 						<div class="form-group"><!-- 'form-group-compound' -->	
-							<label class="block-label" for="pay-insurance-yes">
-								<input id="pay-insurance-yes" type="radio" name="pay-insurance" value="Yes">
+							<label class="block-label" for="duration-yes">
+								<input id="duration-yes" type="radio" name="duration" value="Yes">
 								Yes
 							</label>
-							<label class="block-label" for="pay-insurance-no">
-								<input id="pay-insurance-no" type="radio" name="pay-insurance" value="No">
+							<label class="block-label" for="duration-no">
+								<input id="duration-no" type="radio" name="duration" value="No">
 								No
 							</label>         
 						</div>  
@@ -85,7 +80,7 @@
 					
 					<!-- Primary buttons, secondary links -->
 					<div class="form-group">
-						<input type="submit" class="button" value="Continue">
+						<input type="submit" class="button" value="I understand - Start application">
 					</div>
 				
 				
