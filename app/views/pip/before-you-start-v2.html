@@ -1,0 +1,67 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	<form action="guard-question01.html" method="#" class="form">
+		<div class="grid-row sectioning">
+			<div class="column-two-thirds">
+
+				
+				
+					<a href="make" class="example-back-link">Back</a>
+					
+					<!--div class="section-progress">
+					Step 3 of 17
+					</div-->
+					
+					<h1 class="form-title heading-large">
+					Before you start
+					</h1>
+
+					<p>To qualify for Personal Independence Payment (<abbr>PIP</abbr>) you must have an under lying condition that affects either your mobility, physicality or mental health.</p>
+
+					<p>You must have one of the following to qualify for PIP</p>
+
+					<ul class="list-bullet">
+						<li>Mobility issues - difficulty moving around</li>
+						<li>Difficulties doing simple physical tasks</li>
+						<li>Mental health issues</li>
+					</ul>
+
+
+					<p>In order to qualify for PIP you must have a <a href="/definition-of-disability-under-equality-act-2010">long-term health condition or disability</a> that's affected you for 3 months and is expected to last at least 9 months.</p>
+					
+					<!-- Primary buttons, secondary links -->
+					<div class="form-group">
+						<input type="submit" class="button" value="I understand - Start application">
+					</div>
+				
+				
+			  
+			</div>
+			<div class="column-third">
+				
+			</div>
+		</div>
+	</form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
