@@ -30,40 +30,26 @@
 					Before you start
 					</h1>
 
-					<p>To qualify for Personal Independence Payment (<abbr>PIP</abbr>) you must have an under lying condition that affects either your mobility, physicality or mental health.</p>
+					<fieldset class="inline">
 					
+						<legend class="form-label-bold add-padding" for="duration">Have you had a long-term health condition or disability for at least 3 months? </legend>
+						
+						<div class="form-group"><!-- 'form-group-compound' -->	
+							<label class="block-label" for="duration-yes">
+								<input id="duration-yes" type="radio" name="duration" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="duration-no">
+								<input id="duration-no" type="radio" name="duration" value="No">
+								No
+							</label>         
+						</div>  
 					
-					<fieldset>
-						<legend class="form-label-bold">Which of the following affects you?</legend>
-						<p>Select all that apply</p>
-
-						<label class="block-label" for="mobility">
-							<input id="checkbox-1" type="checkbox" value="waste-animal">
-						Mobility <span class="form-hint">Difficulties moving around.</span>
-						</label>
-						<label class="block-label" for="checkbox-2">
-							<input id="checkbox-2" type="checkbox" value="waste-mines">
-						Physical <span class="form-hint">Difficulties with doing simple physical tasks.</span>
-						</label>
-						<label class="block-label" for="checkbox-3">
-							<input id="checkbox-3" type="checkbox" value="farm-agricultural">
-						Mental <span class="form-hint">Difficulties with your mental health.</span>
-						</label>
 					</fieldset>
-
-			</div>
-			<div class="column-third">
-				
-			</div>
-		</div>
-		<div class="grid-row">
-			<div class="column-two-thirds">
 
 					<fieldset class="inline">
 					
-						<legend class="form-label-bold add-padding" for="duration">Has your condition affected you for 3 months and is it expected to last at least 9 months? </legend>
-
-							<p>In order to qualify for PIP you must have a <a href="/definition-of-disability-under-equality-act-2010">long-term health condition or disability</a> that's affected you for 3 months and is expected to last at least 9 months.</p>
+						<legend class="form-label-bold add-padding" for="duration">Is your condition expected to last at least another 9 months? </legend>
 						
 						<div class="form-group"><!-- 'form-group-compound' -->	
 							<label class="block-label" for="duration-yes">
@@ -78,18 +64,38 @@
 					
 					</fieldset>
 					
+					<fieldset>
+						<legend class="form-label-bold">Which of these does your condition affect?</legend>
+						<p>You can choose more than one.</p>
+
+						<label class="block-label" for="checkbox-1">
+							<input id="checkbox-1" type="checkbox" value="mobility">
+						Moving around</label>
+						<label class="block-label" for="checkbox-2">
+							<input id="checkbox-2" type="checkbox" value="waste-mines">
+						Simple physical tasks, eg cooking or dressing yourself
+						</label>
+						<label class="block-label" for="checkbox-3">
+							<input id="checkbox-3" type="checkbox" value="farm-agricultural">
+						Your mental health
+						</label>
+					</fieldset>
+
+					<div class="panel-indent">
+						<p class="alert">If you're terminally ill and have been given less than 6 months to live then you should phone 0800 120 1234 to have your claim dealt with more quickly.</p>
+					</div>
+
 					<!-- Primary buttons, secondary links -->
 					<div class="form-group">
-						<input type="submit" class="button" value="I understand - Start application">
+						<input type="submit" class="button" value="I understand - start my application">
 					</div>
-				
-				
-			  
+
 			</div>
 			<div class="column-third">
 				
 			</div>
 		</div>
+		
 	</form>
 
 </main><!-- / #page-container -->
