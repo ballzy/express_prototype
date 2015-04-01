@@ -98,38 +98,39 @@
 							
 							</fieldset>
 						</li>
-						<li>
-							<div class="form-group">
-									<p class="form-label-bold" for="aids-appliances">Do you use an aid or appliance to walk?</p>
-									<p class="form-hint">Eg a walking stick, walking frame, crutches pr prosthetics.</p>
-									<label class="block-label" data-target="another-person-details" for="another-person-yes">
-										<input id="another-person-yes" type="radio" name="another-person" value="Yes">
-										Yes
-									</label>
-									<label class="block-label" for="another-person-no">
-										<input id="another-person-no" type="radio" name="another-person" value="No">
-										No
-									</label>  
+						<li class="panel">
+							<fieldset class="form-group inline">
+								<legend class="form-label-bold" for="aids-appliances">Do you use an aid or appliance to walk?</legend>
+								<p class="form-hint">Eg a walking stick, walking frame, crutches pr prosthetics.</p>
+								<label class="block-label" data-target="aids-appliances-details" for="aids-appliances-yes">
+									<input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="aids-appliances-no">
+									<input id="aids-appliances-no" type="radio" name="aids-appliances" value="No">
+									No
+								</label>  
+							</fieldset>
+								<div class="js-hidden" id="aids-appliances-details">
+									<label class="form-label" for="aids-appliances-details">Tell us about the aids and appliances that you use to walk and how often you use them.</label>
+									<textarea type="text" class="form-control-3-4" id="aids-appliances-details"></textarea> 
 								</div>
-								
-								<div class="panel js-hidden" id="another-person-details">
-									<p class="form-label" for="another-person-details">Describe the help you need and how often you need it.</p>
-									<textarea type="text" class="form-control-3-4"></textarea> 
-								</div>
-								
-								<div class="form-group">  
-									<label class="form-label-bold" for="cook-other">Describe the difficulties you have when making yourself a meal, including any side effects, eg pain or tiredness.</label>
-									<p class="form-hint">Describe how often you have 'good' and 'bad' days and what happens during them.</p>
-									<!--ul class="form-hint list-bullet">
-										<li>If you can't do this safely, as often as you need to, or in a reasonable time.</li>
-										<li>If you can only cook using a microwave.</li>
-										<li>If your ability to do it varies, tell us in what way and how often - for example, telling us about good and bad days or how it varies throughout the day.</li>
-										<li>If you can do it but it takes you a long time.</li>
-										<li>If you have side effects from carrying out the activity - either during or after the activity - like pain, breathlessness or tiredness.</li>
-									</ul-->
-									<textarea type="text" class="cook-other form-control-3-4"></textarea>
-								</div>  
-							</li>
+							
+						</li>
+						<li>	
+							<div class="form-group">  
+								<label class="form-label-bold" for="cook-other">Describe the difficulties you have when making yourself a meal, including any side effects, eg pain or tiredness.</label>
+								<p class="form-hint">Describe how often you have 'good' and 'bad' days and what happens during them.</p>
+								<!--ul class="form-hint list-bullet">
+									<li>If you can't do this safely, as often as you need to, or in a reasonable time.</li>
+									<li>If you can only cook using a microwave.</li>
+									<li>If your ability to do it varies, tell us in what way and how often - for example, telling us about good and bad days or how it varies throughout the day.</li>
+									<li>If you can do it but it takes you a long time.</li>
+									<li>If you have side effects from carrying out the activity - either during or after the activity - like pain, breathlessness or tiredness.</li>
+								</ul-->
+								<textarea type="text" class="cook-other form-control-3-4"></textarea>
+							</div>  
+						</li>
 						
 				</div> 
 				
