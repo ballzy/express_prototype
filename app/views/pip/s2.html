@@ -14,115 +14,120 @@
 <main id="page-container" role="main">
 
 {{>includes/phase_banner}}
+	<div class="grid-row">
+		<div class="column-two-thirds">
 
-  <form action="s3.html" method="#" class="form">
-  
-  	<a href="s1" class="example-back-link">Back</a>
-  
-  	<div class="section-progress">
-  	    Section 2 of 5
-  	</div>
-
-    <h1 class="form-title heading-large">
-      Nationality and where you live
-    </h1>
-
-    <!-- Nationality -->
-    <fieldset>
-    <legend class="form-label-bold add-padding" for="other-surname">What is your nationality?</legend><!--form-label-bold-->
-    
-    <div class="form-group"><!-- 'form-group-compound' -->	
-          <label class="block-label" for="nationality-british">
-            <input id="nationality-british" type="radio" name="nationality" value="Yes" class="js-toggle">
-            British
-          </label>
-          <label class="block-label" for="nationality-other" data-target="other-country">
-            <input id="nationality-other" type="radio" name="nationality" value="No" class="js-toggle">
-            Another country
-          </label>         
-      </div>  
-
-    <div class="panel-indent js-hidden" id="other-country">
-      <label class="form-label" for="other-surname-country">Your nationality</label>
-      <input type="text" class="form-control" id="nationality-other-country">
-    </div>
-    </fieldset>
-    
-    
-    <!-- Do you live in England, Scotland, or Wales -->
-    <fieldset class="inline">
-   
-    <legend class="form-label-bold add-padding" for="where-you-live">Do you live in England, Scotland or Wales?</legend>
-    <!--<p class="form-hint">If you live in Northern Ireland…</p>-->
-    
-    <div class="form-group"><!-- 'form-group-compound' -->	
-          <label class="block-label" for="where-you-live-yes">
-            <input id="where-you-live-yes" type="radio" name="where-you-live" value="Yes">
-            Yes
-          </label>
-          <label class="block-label" for="where-you-live-no" data-target="live-elsewhere">
-            <input id="where-you-live-no" type="radio" name="where-you-live" value="No">
-            No
-          </label>         
-     </div>  
-
-    <div class="panel-indent js-hidden" id="live-elsewhere">
-      <label class="form-label" for="live-elsewhere-country">Country you live in</label>
-      <input type="text" class="form-control" id="live-elsewhere-country">
-    </div>
-    
-    </fieldset>
-    
-    <!-- Time abroad -->
-    <fieldset class="inline">
-    <legend class="form-label-bold">In the last 3 years, have you been away from England, Scotland, or Wales for more than 4&nbsp;weeks at any time? </legend>
-    
-    <p class="form-hint">Answer 'No' if you've been away for shorter trips, even if these accumulate to more than 4 weeks.</p>
-        
-    <div class="form-group"><!-- 'form-group-compound' -->	
-          <label class="block-label" for="time-abroad-yes" data-target="time-abroad-details">
-            <input id="time-abroad-yes" type="radio" name="time-abroad" value="Yes">
-            Yes
-          </label>
-          <label class="block-label" for="time-abroad-no">
-            <input id="time-abroad-no" type="radio" name="time-abroad" value="No">
-            No
-          </label>         
-     </div>
-     
-     <div class="panel-indent js-hidden" id="time-abroad-details">
-       
-       <label class="form-label" for="time-abroad-details">Tell us about where you've been</label>
-       <p class="form-hint">Include dates you left and returned. We might contact you for more information about why you went away.</p>
-       <textarea type="text" id="time-abroad-details" class="time-abroad-details form-control-3-4"></textarea>         
-       
-       <div class="form-group"><!-- 'form-group-compound' -->	
-       		<p class="form-label">When you went away did you intend to return?</p> 
-             <label class="block-label" for="time-abroad-return-yes">
-               <input id="time-abroad-return-yes" type="radio" name="time-abroad-return" value="Yes">
-               Yes
-             </label>
-             <label class="block-label" for="time-abroad-return-no" data-target="live-elsewhere">
-               <input id="time-abroad-return-no" type="radio" name="time-abroad-return" value="No">
-               No
-             </label>         
-        </div> 
-       
-     </div>
-     
-     </fieldset>
-     
-     <!--Tell us about this time away. Include the dates you left and returned and details of where you've been. We may need to contact you for more information.-->
-
-    <!-- Primary buttons, secondary links -->
-    <div class="form-group">
-      <input type="submit" class="button" value="Continue">
-      <!--<ul>
-        <li><a href="/">Back</a></li>
-      </ul>-->
-    </div>
-
-  </form>
+			<form action="s3.html" method="#" class="form">
+			
+				<a href="s1" class="example-back-link">Back</a>
+				
+				<div class="section-progress">
+				Step 2 of 17
+				</div>
+				
+				<h1 class="form-title heading-large">
+				Nationality and where you live
+				</h1>
+				
+				<!-- Nationality -->
+				<fieldset>
+					<legend class="form-label-bold add-padding" for="other-surname">What is your nationality?</legend><!--form-label-bold-->
+					
+					<div class="form-group"><!-- 'form-group-compound' -->	
+						<label class="block-label" for="nationality-british">
+							<input id="nationality-british" type="radio" name="nationality" value="Yes" class="js-toggle">
+							British
+						</label>
+						<label class="block-label" for="nationality-other" data-target="other-country">
+							<input id="nationality-other" type="radio" name="nationality" value="No" class="js-toggle">
+							Another country
+						</label>         
+					</div>  
+					
+					<div class="panel-indent js-hidden" id="other-country">
+						<label class="form-label" for="other-surname-country">Your nationality</label>
+						<input type="text" class="form-control" id="nationality-other-country">
+					</div>
+				</fieldset>
+				
+				
+				<!-- Do you live in England, Scotland, or Wales -->
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold add-padding" for="where-you-live">Do you live in England, Scotland or Wales?</legend>
+					<!--<p class="form-hint">If you live in Northern Ireland…</p>-->
+					
+					<div class="form-group"><!-- 'form-group-compound' -->	
+						<label class="block-label" for="where-you-live-yes">
+							<input id="where-you-live-yes" type="radio" name="where-you-live" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="where-you-live-no" data-target="live-elsewhere">
+							<input id="where-you-live-no" type="radio" name="where-you-live" value="No">
+							No
+						</label>         
+					</div>  
+					
+					<div class="panel-indent js-hidden" id="live-elsewhere">
+						<label class="form-label" for="live-elsewhere-country">Country you live in</label>
+						<input type="text" class="form-control" id="live-elsewhere-country">
+					</div>
+				
+				</fieldset>
+				
+				<!-- Time abroad -->
+				<fieldset class="inline">
+					<legend class="form-label-bold">In the last 3 years, have you been away from England, Scotland, or Wales for more than 4&nbsp;weeks at any time? </legend>
+					
+					<p class="form-hint">Answer 'No' if you've been away for shorter trips, even if these accumulate to more than 4 weeks.</p>
+					
+					<div class="form-group"><!-- 'form-group-compound' -->	
+						<label class="block-label" for="time-abroad-yes" data-target="time-abroad-details">
+							<input id="time-abroad-yes" type="radio" name="time-abroad" value="Yes">
+							Yes
+						</label>
+							<label class="block-label" for="time-abroad-no">
+							<input id="time-abroad-no" type="radio" name="time-abroad" value="No">
+							No
+						</label>         
+					</div>
+					
+					<div class="panel-indent js-hidden" id="time-abroad-details">
+					
+						<label class="form-label" for="time-abroad-details">Tell us about where you've been</label>
+						<p class="form-hint">Include dates you left and returned. We might contact you for more information about why you went away.</p>
+						<textarea type="text" id="time-abroad-details" class="time-abroad-details form-control-3-4"></textarea>         
+						
+						<div class="form-group"><!-- 'form-group-compound' -->	
+							<p class="form-label">When you went away did you intend to return?</p> 
+							<label class="block-label" for="time-abroad-return-yes">
+								<input id="time-abroad-return-yes" type="radio" name="time-abroad-return" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="time-abroad-return-no" data-target="live-elsewhere">
+								<input id="time-abroad-return-no" type="radio" name="time-abroad-return" value="No">
+								No
+							</label>         
+						</div> 
+					
+					</div>
+				
+				</fieldset>
+				
+				<!--Tell us about this time away. Include the dates you left and returned and details of where you've been. We may need to contact you for more information.-->
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		  
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
 
 </main><!-- / #page-container -->
 {{/content}}

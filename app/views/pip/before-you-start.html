@@ -1,0 +1,106 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	<form action="guard-question01.html" method="#" class="form">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+
+					<a href="make" class="example-back-link">Back</a>
+					
+					<!--div class="section-progress">
+					Step 3 of 17
+					</div-->
+					
+					<h1 class="form-title heading-large">
+					Before you start
+					</h1>
+
+					<fieldset class="inline">
+					
+						<legend class="form-label-bold add-padding" for="duration">Have you had a health condition or disability for at least 3 months? </legend>
+						
+						<div class="form-group"><!-- 'form-group-compound' -->	
+							<label class="block-label" for="duration-yes">
+								<input id="duration-yes" type="radio" name="duration" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="duration-no">
+								<input id="duration-no" type="radio" name="duration" value="No">
+								No
+							</label>         
+						</div>  
+					
+					</fieldset>
+
+					<fieldset class="inline">
+					
+						<legend class="form-label-bold add-padding" for="duration">Is your condition expected to last at least another 9 months? </legend>
+						
+						<div class="form-group"><!-- 'form-group-compound' -->	
+							<label class="block-label" for="duration-yes">
+								<input id="duration-yes" type="radio" name="duration" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="duration-no">
+								<input id="duration-no" type="radio" name="duration" value="No">
+								No
+							</label>         
+						</div>  
+					
+					</fieldset>
+					
+					<fieldset>
+						<legend class="form-label-bold">Which of these does your condition affect?</legend>
+						<p>You can choose more than one.</p>
+
+						<label class="block-label" for="checkbox-1">
+							<input id="checkbox-1" type="checkbox" value="mobility">
+						Moving around or getting around</label>
+						<label class="block-label" for="checkbox-2">
+							<input id="checkbox-2" type="checkbox" value="waste-mines">
+						Simple physical tasks, eg cooking or dressing yourself
+						</label>
+						<label class="block-label" for="checkbox-3">
+							<input id="checkbox-3" type="checkbox" value="farm-agricultural">
+						Your mental health
+						</label>
+					</fieldset>
+
+					<div class="panel-indent">
+						<p class="alert">If you're terminally ill and have been given less than 6 months to live then you should phone 0800 120 1234 to have your claim dealt with more quickly.</p>
+					</div>
+
+					<!-- Primary buttons, secondary links -->
+					<div class="form-group">
+						<input type="submit" class="button" value="I understand - start my application">
+					</div>
+
+			</div>
+			<div class="column-third">
+				
+			</div>
+		</div>
+		
+	</form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

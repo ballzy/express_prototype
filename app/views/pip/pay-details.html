@@ -13,82 +13,88 @@
 {{$content}}
 <main id="page-container" role="main">
 
-{{>includes/phase_banner}}
-
-  <form action="declaration.html" method="#" class="form">
-  
-  	<a href="consent.html" class="example-back-link">Back</a>
-  
-  	<!--<div class="section-progress">
-  	    Section 4 of 4
-  	</div>-->
-
-    <h1 class="form-title heading-large">
-      Payment details
-    </h1>
-    
-    <!-- provide bank details -->
-    <fieldset class="inline">
-    
-      <legend class="form-label-bold" for="bank-details">Do you want to provide your bank details now?</legend>
-      
-      <p class="form-hint">Not providing bank details could delay your first payment if your claim is successful.</p>
-    
-      <div class="form-group">	
-        <label class="block-label" data-target="add-bank-details" for="bank-details-yes">
-        <input id="bank-details-yes" type="radio" name="bank-details" value="Yes">
-        Yes
-      </label>
-      <label class="block-label" for="bank-details-no">
-        <input id="bank-details-no" type="radio" name="bank-details" value="No">
-        No
-      </label>
-      
-    </fieldset>
-    
-    <!--js-hidden-->
-      <div class="panel-indent js-hidden" id="add-bank-details">
-      
-          <fieldset class="inline">
-          
-            <div class="form-group">
-              <label class="form-label" for="account-holder">Account holder name</label>
-              <input type="text" class="form-control" id="ccount-holder">
-            </div>
-            
-    	
-    	  <div class="form-group">		  
-    	    <label class="form-label" for="type-of-account">Type of account</label>
- 			<input type="text" class="form-control" id="type-of-account">
-    	  </div>
-    	     
-    
-     	  <div class="form-group">	
-     	    <label class="form-label" for="sort-code">Sort code</label>
-    		<input type="text" class="form-control" id="sort-code">	  
-     	  </div>
-     	
-     	  <div class="form-group">
-     	  	<label class="form-label" for="account-number">Account number</label>
-      		<input type="text" class="form-control" id="account-number">  
-     	  </div>
-     	     
-     	 </fieldset> 	 	 
-           
-      </div>
-    
-      
-    
-    <!-- Primary buttons, secondary links -->
-    <div class="form-group">
-      <input type="submit" class="button" value="Continue">
-      <!--<ul>
-        <li><a href="/">Back</a></li>
-      </ul>-->
-    </div>
-
-  </form>
-
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+		
+			<form action="declaration.html" method="#" class="form">
+			
+				<a href="consent.html" class="example-back-link">Back</a>
+				
+				<!--<div class="section-progress">
+				Section 4 of 4
+				</div>-->
+				
+				<h1 class="form-title heading-large">
+				Payment details
+				</h1>
+				
+				<!-- provide bank details -->
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold" for="bank-details">Do you want to provide your bank details now?</legend>
+					
+					<p class="form-hint">Not providing bank details could delay your first payment if your claim is successful.</p>
+					
+					<div class="form-group">	
+						<label class="block-label" data-target="add-bank-details" for="bank-details-yes">
+							<input id="bank-details-yes" type="radio" name="bank-details" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="bank-details-no">
+							<input id="bank-details-no" type="radio" name="bank-details" value="No">
+							No
+						</label>
+					</div>
+				</fieldset>
+				
+				<!--js-hidden-->
+				<div class="panel-indent js-hidden" id="add-bank-details">
+				
+					<fieldset class="inline">
+					
+						<div class="form-group">
+							<label class="form-label" for="account-holder">Account holder name</label>
+							<input type="text" class="form-control" id="account-holder">
+						</div>
+					
+					
+						<div class="form-group">		  
+							<label class="form-label" for="type-of-account">Type of account</label>
+							<input type="text" class="form-control" id="type-of-account">
+						</div>
+						
+						
+						<div class="form-group">	
+							<label class="form-label" for="sort-code">Sort code</label>
+							<input type="text" class="form-control" id="sort-code">	  
+						</div>
+						
+						<div class="form-group">
+							<label class="form-label" for="account-number">Account number</label>
+							<input type="text" class="form-control" id="account-number">  
+						</div>
+					 
+					</fieldset> 	 	 
+				
+				</div>
+				
+				
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+	
 </main><!-- / #page-container -->
 {{/content}}
 

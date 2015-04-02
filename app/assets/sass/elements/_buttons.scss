@@ -9,6 +9,11 @@
   vertical-align: top;
 }
 
+.button.secondary,
+.button.secondary:visited {
+  @include button ($grey-3);
+}
+
 .button:focus {
   outline: 3px solid $yellow;
 }

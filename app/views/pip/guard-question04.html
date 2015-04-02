@@ -1,0 +1,79 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="guard-question05.html" method="#" class="form">
+			
+				<a href="guard-question03.html" class="example-back-link">Back</a>
+				
+				<h1 class="form-title heading-large">
+				Your day-to-day life
+				</h1>
+				<ul>
+					<li>
+						<fieldset>
+						
+							<legend class="form-label-bold add-padding" for="reading-talking">Do you need help reading words or signs, or talking to people?</legend>
+
+							<p class="hint-text">This includes if talking to people makes you feel anxious or if you have trouble understanding them.</p>
+							
+							<div class="form-group">
+								<label class="block-label" data-target="positive" for="reading-talking-always">
+									<input id="reading-talking-always" type="radio" name="reading-talking" value="Always">
+									Always
+								</label>
+								<label class="block-label" data-target="positive" for="reading-talking-sometimes">
+									<input id="reading-talking-sometimes" type="radio" name="reading-talking" value="Sometimes">
+									Sometimes
+								</label>  
+								<label class="block-label" data-target="negative" for="reading-talking-never">
+									<input id="reading-talking-never" type="radio" name="reading-talking" value="Never">
+									Never
+								</label> 
+							</div>
+						
+						</fieldset>
+					</li>
+				</ul>
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group js-hidden" id="negative">
+					<input type="submit" class="button" value="Continue">
+				</div>
+
+				<div class="form-group js-enabled add-padding" id="positive">
+					<p><a href="stub04.html" class="button">Continue</a></p> 
+				</div>
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

@@ -1,0 +1,147 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+
+	<div class="grid-row">
+
+			<form action="thank-you.html" method="#" class="form">
+			
+				<a href="pip3.html" class="example-back-link">Back</a>
+				
+				<div class="section-progress">
+				Step 5 of 5
+				</div>
+				
+				<h1 class="form-title heading-large">
+				Making decisions about money 
+				</h1>
+				
+				<ul>
+					<li>
+						<fieldset>
+						
+							<legend class="form-label-bold add-padding" for="decisions">How often do you need help to make decisions about spending or managing your money?</legend>
+							
+							<div class="form-group">
+								<label class="block-label" data-target="money-details" for="decisions-everyday">
+									<input id="decisions-everyday" type="radio" name="decisions" value="Everyday">
+									Every day
+								</label>
+								<label class="block-label" data-target="money-details" for="decisions-2or3">
+									<input id="decisions-2or3" type="radio" name="decisions" value="2 or 3 times a week">
+									3 or 4 times a week
+								</label> 
+								<label class="block-label" data-target="money-details" for="decisions-occasionally">
+									<input id="decisions-occasionally" type="radio" name="decisions" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" for="decisions-never">
+									<input id="decisions-never" type="radio" name="decisions" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+				</ul>
+				<ul class="js-hidden" id="money-details">
+					<li>
+						<fieldset class="inline">
+							
+							<legend class="form-label-bold add-padding" for="understand-cost">Do you need help to understand how much things cost when you buy them or how much change you'll receive?</legend>
+
+							<div class="form-group">
+								<label class="block-label" data-target="understand-cost-details" for="understand-cost-yes">
+									<input id="understand-cost-yes" type="radio" name="understand-cost" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="understand-cost-no">
+									<input id="understand-cost-no" type="radio" name="understand-cost" value="No">
+									No
+								</label>  
+							</div>  
+
+							<!--js-hidden / details-->
+							
+							<div class="panel js-hidden" id="understand-cost-details">
+								<label class="form-label" for="understand-cost-ta">Tell us more about how you struggle with understanding costs and receiving change</label>
+								<textarea type="text" class="form-control-3-4" name="understand-cost-details" id="understand-cost-ta"></textarea> 
+							</div>
+
+						</fieldset>
+					</li>
+					<li>
+						<fieldset class="inline">
+							
+							<legend class="form-label-bold add-padding" for="manage-budgets">Do you need someone else to help you to manage your household budgets, pay bills or plan future?</legend>
+
+							<div class="form-group">
+								<label class="block-label" data-target="manage-budgets-details" for="manage-budgets-yes">
+									<input id="manage-budgets-yes" type="radio" name="manage-budgets" value="Yes">
+									Yes
+								</label>
+								<label class="block-label" for="manage-budgets-no">
+									<input id="manage-budgets-no" type="radio" name="manage-budgets" value="No">
+									No
+								</label>  
+							</div>  
+
+							<!--js-hidden / details-->
+							
+							<div class="panel js-hidden" id="manage-budgets-details">
+								<label class="form-label" for="manage-budgets-ta">Tell us more about the difficulties you have managing your household budgets, bills and future plans</label>
+								<textarea type="text" class="form-control-3-4" name="manage-budgets-details" id="manage-budgets-ta"></textarea> 
+							</div>
+
+						</fieldset>
+					</li>
+					<li>
+						<fieldset>
+							<div class="form-group">  
+								<label class="form-label-bold" for="more-info">Tell us more about the difficulties or help you need to manage your money</label>
+								<p class="form-hint"> For example, tell us:</p>
+								<ul class="form-hint list-bullet" for="more-info">
+									<li>If you can’t do this as often as you need to, or in a reasonable time.</li>
+									<li>If you need help from another person, tell us what kind (for example whether they need to prompt, remind or encourage you to manage your finances or whether supervise you when you buy goods).</li>
+									<li>If your ability to monitor or manage your money varies, tell us in what way and how often - for example telling us about good days and bad days or how it varies throughout the day.</li>
+									<li>If you can do it but it takes you a long time.</li>
+									<li>If you have side effects from carrying out the activity - either during or after the activity like pain, breathlessness or tiredness.</li>
+								</ul>
+								<textarea type="text" class="eat-drink-other form-control-3-4" id="more-info"></textarea>    
+							</div>
+						</fieldset>
+					</li>	
+				</ul>
+
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

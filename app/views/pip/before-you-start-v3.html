@@ -1,0 +1,144 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	<form action="guard-question01.html" method="#" class="form">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+
+				
+				
+					<a href="make" class="example-back-link">Back</a>
+					
+					<!--div class="section-progress">
+					Step 3 of 17
+					</div-->
+					
+					<h1 class="form-title heading-large">
+					Before you start
+					</h1>
+
+					<p>To get Personal Independence Payment you must have a <a href="/definition-of-disability-under-equality-act-2010">long-term health condition or disability</a> that:</p>
+
+					<ul class="list-bullet">
+						<li>affects your mobility, physical ability or mental health</li>
+						<li>makes it difficult for you to live independently</li>
+						<li>you've had for 3 months</li>
+						<li>is expected to last at least another 9 months</li>
+					</ul>
+
+					<ul>
+						<li>
+							<fieldset class="inline">
+							
+								<legend class="form-label-bold add-padding" for="mobility">Do you have difficulty moving around?</legend>
+								
+								<div class="form-group">
+									<label class="block-label" for="mobility-yes">
+										<input id="mobility-yes" type="radio" name="mobility" value="Yes">
+										Yes
+									</label>
+									<label class="block-label" for="mobility-no">
+										<input id="mobility-no" type="radio" name="mobility" value="No">
+										No
+									</label>   
+								</div>
+							
+							</fieldset>
+						</li>
+						<li>
+							<fieldset class="inline">
+							
+								<legend class="form-label-bold add-padding" for="physical">Do you have difficulties with simple physical tasks?</legend>
+
+								<!--p class="form-hint">Do you have difficulty moving around?</p-->
+								
+								<div class="form-group">
+									<label class="block-label" for="physical-yes">
+										<input id="physical-yes" type="radio" name="physical" value="Yes">
+										Yes
+									</label>
+									<label class="block-label" for="physical-no">
+										<input id="physical-no" type="radio" name="physical" value="No">
+										No
+									</label>   
+								</div>
+							
+							</fieldset>
+						</li>
+						<li>
+							<fieldset class="inline">
+							
+								<legend class="form-label-bold add-padding" for="mental">Do you suffer from anxiety, stress or mental health problems?</legend>
+
+								<!--p class="form-hint">Do you have difficulty moving around?</p-->
+								
+								<div class="form-group">
+									<label class="block-label" for="mental-yes">
+										<input id="mental-yes" type="radio" name="mental" value="Yes">
+										Yes
+									</label>
+									<label class="block-label" for="mental-no">
+										<input id="mental-no" type="radio" name="mental" value="No">
+										No
+									</label>   
+								</div>
+							
+							</fieldset>
+						</li>
+						<li>
+							<fieldset class="inline">
+							
+								<legend class="form-label-bold add-padding" for="duration">Has your condition affected you for 3 months and is it expected to last at least 9 months?</legend>
+
+								<!--p class="form-hint">Do you have difficulty moving around?</p-->
+								
+								<div class="form-group">
+									<label class="block-label" for="duration-yes">
+										<input id="duration-yes" type="radio" name="duration" value="Yes">
+										Yes
+									</label>
+									<label class="block-label" for="duration-no">
+										<input id="duration-no" type="radio" name="duration" value="No">
+										No
+									</label>   
+								</div>
+							
+							</fieldset>
+						</li>
+					</ul>
+					
+					<!-- Primary buttons, secondary links -->
+					<div class="form-group">
+						<input type="submit" class="button" value="Continue">
+					</div>
+				
+				
+			  
+			</div>
+			<div class="column-third">
+				
+			</div>
+		</div>
+	</form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

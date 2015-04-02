@@ -1,0 +1,75 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="s9.html" method="#" class="form">
+			
+				<a href="s7.html" class="example-back-link">Back</a>
+				
+				<div class="section-progress">
+				Step 8 of 17
+				</div>
+				
+				<h1 class="form-title heading-large">
+				Your day-to-day activities - managing treatments 
+				</h1>
+				
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold" for="preparing-food">Do you need to monitor changes in your health condition, take medication
+					or manage any treatments carried out at home?</legend>
+					
+					<p class="form-hint">Monitoring changes includes monitoring blood sugar level, changes in mental state and pain
+					levels. Home treatments include things like physiotherapy and home dialysis, regardless of
+					whether these are NHS or private.</p>
+					
+					<div class="form-group">
+						<label class="block-label" data-target="guard-question-details" for="guard-question-yes">
+							<input id="guard-question-yes" type="radio" name="guard-question" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="guard-question-no">
+							<input id="guard-question-no" type="radio" name="guard-question" value="No">
+							No
+						</label>  
+					</div>
+				
+				</fieldset>
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+	
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

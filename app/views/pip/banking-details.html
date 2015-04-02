@@ -1,0 +1,111 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+		
+			<form action="declaration.html" method="#" class="form">
+			
+				<a href="consent.html" class="example-back-link">Back</a>
+				
+				<!--<div class="section-progress">
+				Section 4 of 4
+				</div>-->
+				
+				<h1 class="form-title heading-large">
+				Bank account details
+				</h1>
+				
+				<!-- provide bank details -->
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold" for="bank-details">Do you want to provide your bank details now?</legend>
+					
+					<p class="form-hint">Not providing bank details could delay your first payment if your claim is successful.</p>
+					
+					<div class="form-group">	
+						<label class="block-label" data-target="add-bank-details" for="bank-details-yes">
+							<input id="bank-details-yes" type="radio" name="bank-details" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="bank-details-no">
+							<input id="bank-details-no" type="radio" name="bank-details" value="No">
+							No
+						</label>
+					</div>
+				</fieldset>
+				
+				<!--js-hidden-->
+				<div class="panel-indent js-hidden" id="add-bank-details">
+				
+					<fieldset class="inline">
+
+						<div class="form-group">		  
+							<label class="form-label-bold" for="type-of-account">Name of bank, building society or other account provider</label>
+							<input type="text" class="form-control" id="type-of-account">
+						</div>
+						
+						<div class="form-group">	
+							<label class="form-label-bold" for="sort-code">Sort code</label>
+							<p class="form-hint">For example 12-43-56</p>
+							<input type="text" class="form-control" id="sort-code">	  
+						</div>
+						
+						<div class="form-group">
+							<label class="form-label-bold" for="account-number">Account number</label>
+							<input type="text" class="form-control" id="account-number">  
+						</div>
+
+						<div class="form-group">
+							<label class="form-label-bold" for="roll-or-reference">Building society roll or reference number</label>
+							<p class="form-hint">If your building society uses a roll or reference number, you will find it on the passbook.</p>
+							<input type="text" class="form-control" id="roll-or-reference">
+						</div>
+
+						<div class="form-group">
+							<label class="form-label-bold" for="account-holder">Account holder's name</label>
+							<p class="form-hint">Please write the name exactly as it appears on the cheque book, passbook or statement.</p>
+							<input type="text" class="form-control" id="account-holder">
+						</div>
+					 
+					</fieldset> 	 	 
+				
+				</div>
+				
+				
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+	
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

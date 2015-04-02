@@ -1,0 +1,237 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+
+			<form action="pip4.html" method="#" class="form">
+			
+				<a href="pip2.html" class="example-back-link">Back</a>
+				
+				<div class="section-progress">
+				Step 4 of 5
+				</div>
+				
+				<h1 class="form-title heading-large">
+				Dressing and undressing yourself
+				</h1>
+				<ul>
+					<li>
+						<fieldset>
+						
+							<legend class="form-label-bold add-padding" for="dress-undress">How often are you able to dress and undress yourself?</legend>
+							
+							<div class="form-group">
+								<label class="block-label" for="dress-undress-everyday">
+									<input id="dress-undress-everyday" type="radio" name="dress-undress" value="Everyday">
+									Every day
+								</label>
+								<label class="block-label" data-target="dressing-details" for="dress-undress-2or3">
+									<input id="dress-undress-2or3" type="radio" name="dress-undress" value="2 or 3 times a week">
+									3 or 4 days a week
+								</label> 
+								<label class="block-label" data-target="dressing-details" for="dress-undress-occasionally">
+									<input id="dress-undress-occasionally" type="radio" name="dress-undress" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" data-target="dressing-details" for="dress-undress-never">
+									<input id="dress-undress-never" type="radio" name="dress-undress" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+				</ul>
+				<ul class="js-hidden" id="dressing-details">
+					<li>
+						<fieldset>
+						
+							<legend class="form-label-bold" for="appliances">How often do you need to use an aid or appliance to dress or undress?</legend>
+
+							<p class="hint-text">Suitable aids could include modified buttons, modified zips, front-fastening bras, modified trouser, velcro fastenings or shoe aids</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="appliances-everyday">
+									<input id="appliances-everyday" type="radio" name="appliances" value="Everyday">
+									Every day
+								</label>
+								<label class="block-label" for="appliances-2or3">
+									<input id="appliances-2or3" type="radio" name="appliances" value="2 or 3 times a week">
+									3 or 4 times a week
+								</label> 
+								<label class="block-label" for="appliances-occasionally">
+									<input id="appliances-occasionally" type="radio" name="appliances" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" for="appliances-never">
+									<input id="appliances-never" type="radio" name="appliances" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset>
+						
+							<legend class="form-label-bold add-padding" for="prompting">How often do you need prompting to get dressed or undressed?</legend>
+							
+							<div class="form-group">
+								<label class="block-label" for="prompting-everyday">
+									<input id="prompting-everyday" type="radio" name="prompting" value="Everyday">
+									Every day
+								</label>
+								<label class="block-label" for="prompting-2or3">
+									<input id="prompting-2or3" type="radio" name="prompting" value="2 or 3 times a week">
+									3 or 4 times a week
+								</label> 
+								<label class="block-label" for="prompting-occasionally">
+									<input id="prompting-occasionally" type="radio" name="prompting" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" for="prompting-never">
+									<input id="prompting-never" type="radio" name="prompting" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset>
+						
+							<legend class="form-label-bold add-padding" for="choosing">How often do you need help choosing appropiate clothing?</legend>
+							
+							<div class="form-group">
+								<label class="block-label" for="choosing-everyday">
+									<input id="choosing-everyday" type="radio" name="choosing" value="Everyday">
+									Every day
+								</label>
+								<label class="block-label" for="choosing-2or3">
+									<input id="choosing-2or3" type="radio" name="choosing" value="2 or 3 times a week">
+									3 or 4 times a week
+								</label> 
+								<label class="block-label" for="choosing-occasionally">
+									<input id="choosing-occasionally" type="radio" name="choosing" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" for="choosing-never">
+									<input id="choosing-never" type="radio" name="choosing" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset>
+						
+							<legend class="form-label-bold" for="lower-body">How often do you require assistance to dress or undress your lower body?</legend>
+
+							<p class="hint-text">By lower body we mean help putting on and taking off your trousers, socks, skirts, tights, underwear or shoes</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="lower-body-everyday">
+									<input id="lower-body-everyday" type="radio" name="lower-body" value="Everyday">
+									Every day
+								</label>
+								<label class="block-label" for="lower-body-2or3">
+									<input id="lower-body-2or3" type="radio" name="lower-body" value="2 or 3 times a week">
+									3 or 4 times a week
+								</label> 
+								<label class="block-label" for="lower-body-occasionally">
+									<input id="lower-body-occasionally" type="radio" name="lower-body" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" for="lower-body-never">
+									<input id="lower-body-never" type="radio" name="lower-body" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+					<li>
+						<fieldset>
+						
+							<legend class="form-label-bold" for="upper-body">How often do you require assistance to dress or undress your upper body?</legend>
+
+							<p class="hint-text">By lower body we mean help putting on and taking off your t-shirt, jumper, bra, coat, shirt or top</p>
+							
+							<div class="form-group">
+								<label class="block-label" for="upper-body-everyday">
+									<input id="upper-body-everyday" type="radio" name="upper-body" value="Everyday">
+									Every day
+								</label>
+								<label class="block-label" for="upper-body-2or3">
+									<input id="upper-body-2or3" type="radio" name="upper-body" value="2 or 3 times a week">
+									3 or 4 times a week
+								</label> 
+								<label class="block-label" for="upper-body-occasionally">
+									<input id="upper-body-occasionally" type="radio" name="upper-body" value="Occasionally">
+									Occasionally
+								</label> 
+								<label class="block-label" for="upper-body-never">
+									<input id="upper-body-never" type="radio" name="upper-body" value="Never">
+									Never
+								</label>  
+							</div>
+						
+						</fieldset>
+					</li>
+
+				</ul>
+
+				<div class="form-group">
+					<p class="form-label-bold" for="more-info">Please tell us more information about the difficulties or help you need to get dressed or undress</p>
+					<details>
+						<summary><span class="summary">Help for this part of the form</span></summary>
+						<div class="panel-indent">
+							<p>Tell us more about:</p>
+							<ul class="list-bullet">
+								<li>If you can't do this safely, to an acceptable standard, as often as you need to and in a reasonable time.</li>
+								<li>If you need help from another person, tell us what kind (for example whether they need to remind or motivate you to dress or undress, plan the task for you, supervise you while you are doing it, physically help you or prepare your clothes for you).</li>
+								<li>If you use aids and appliances, tell us what type they are and how you use them.</li>
+								<li>If your ability to do it varies, tell us in what way and how often - for example, telling us about good and bad days or how it varies throughout the day.</li>
+								<li>If you can do it but it takes you a long time</li>
+								<li>if you have side effects from carrying out the activity - either during or after the activity - like pain, breathlessness or tiredness.</li>
+							</ul>
+						</div>
+					</details>
+					<textarea type="text" class="form-control-3-4" name="more-info"></textarea>  
+				</div>
+
+				
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

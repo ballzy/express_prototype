@@ -1,0 +1,168 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+{{>includes/phase_banner}}
+
+  <form action="s7.html" method="#" class="form">
+  
+  	<a href="s5.html" class="example-back-link">Back</a>
+  
+  	<div class="section-progress">
+  	    Step 6 of 17
+  	</div>
+
+    <h1 class="form-title heading-large">
+      Your day-to-day activities - preparing food
+    </h1>
+    
+    <fieldset class="inline">
+   
+    <legend class="form-label-bold" for="preparing-food">Do you need any help to prepare a simple meal from fresh ingredients?</legend>
+    
+    <p class="form-hint">This includes food preparation and being able to safety cook or heat food.</p>
+    
+	<div class="form-group">
+	  <label class="block-label" data-target="preparing-food-details" for="preparing-food-yes">
+	  <input id="preparing-food-yes" type="radio" name="preparing-food" value="Yes">
+	  Yes
+	</label>
+	<label class="block-label" for="preparing-food-no">
+	  <input id="preparing-food-no" type="radio" name="preparing-food" value="No">
+	  No
+	</label>  
+	</div>
+	
+	</fieldset>
+     
+    <!--js-hidden / details-->
+    
+    <div class="panel-indent js-hidden" id="preparing-food-details">
+     
+      <fieldset class="inline">
+       
+      <div class="form-group">
+        <p class="form-label-bold" for="aids-appliances">Do you use an aid or appliances to prepare or cook a simple meal?</p>
+        <p class="form-hint">For example, perching stools, lightweight pots and pans, easy grip handles on utensils, single lever arm taps or liquid level indicators.</p>
+        <label class="block-label" data-target="" for="aids-appliances-yes">
+        <input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
+        Yes
+        </label>
+        <label class="block-label" for="aids-appliances-no">
+        <input id="aids-appliances-no" type="radio" name="aids-appliances" value="No">
+        No
+        </label>  
+      </div>
+       
+      <div class="form-group">
+        <p class="form-label-bold" for="another-person">Do you need help from another person to prepare or cook a simple meal?</p>
+        <p class="form-hint">Help includes someone physically assisting you, cooking food for you or supervising you to make sure you are safe.</p>
+        <label class="block-label" data-target="" for="another-person-yes">
+        <input id="another-person-yes" type="radio" name="another-person" value="Yes">
+        Yes
+        </label>
+        <label class="block-label" for="another-person-no">
+        <input id="another-person-no" type="radio" name="another-person" value="No">
+        No
+        </label>  
+      </div>
+      
+      <div class="form-group">
+        <p class="form-label-bold" for="reminded-to-cook">Do you need someone to prompt, encourage, and remind you to cook or how to do so?</p>
+        <label class="block-label" data-target="" for="reminded-to-cook-yes">
+        <input id="reminded-to-cook-yes" type="radio" name="reminded-to-cook" value="Yes">
+        Yes
+        </label>
+        <label class="block-label" for="reminded-to-cook-no">
+        <input id="reminded-to-cook-no" type="radio" name="reminded-to-cook" value="No">
+        No
+       </label>  
+      </div>
+       
+      <div class="form-group">
+        <p class="form-label-bold" for="chopping-peeling">Do you need help peeling, chopping food or opening a can?</p>
+        <label class="block-label" data-target="" for="chopping-peeling-yes">
+        <input id="chopping-peeling-yes" type="radio" name="chopping-peeling" value="Yes">
+        Yes
+        </label>
+        <label class="block-label" for="chopping-peeling-no">
+        <input id="chopping-peeling-no" type="radio" name="chopping-peeling" value="No">
+        No
+        </label>  
+      </div>
+	  
+	  <div class="form-group">
+	    <p class="form-label-bold" for="safely-cook">Can you safely cook or heat food on a cooker hob or in a microwave oven?</p>
+	    <label class="block-label" data-target="" for="safely-cook-yes">
+	    <input id="safely-cook-yes" type="radio" name="safely-cook" value="Yes">
+	    Yes
+	    </label>
+	    <label class="block-label" for="safely-cook-no">
+	    <input id="safely-cook-no" type="radio" name="safely-cook" value="No">
+	    No
+	   </label>  
+	  </div>
+	  
+	  <!--
+	  <div class="form-group">
+	  	<p class="form-label" for="safely-cook">Do you need supervising to make sure you are safe?</p>
+	    <label class="block-label" data-target="" for="safely-cook-yes">
+	    <input id="safely-cook-yes" type="radio" name="safely-cook" value="Yes">
+	    Yes
+	    </label>
+	    <label class="block-label" for="safely-cook-no">
+	    <input id="safely-cook-no" type="radio" name="safely-cook" value="No">
+	    No
+	   </label>  
+	  </div>
+	  -->
+	 
+	  <div class="form-group">
+	    <p class="form-label-bold" for="cook-variable">Does your ability to prepare food vary?</p>
+	    <label class="block-label" data-target="" for="cook-variable-yes">
+	    <input id="cook-variable-yes" type="radio" name="cook-variable" value="Yes">
+	    Yes
+	    </label>
+	    <label class="block-label" for="cook-variable-no">
+	    <input id="cook-variable-no" type="radio" name="cook-variable" value="No">
+	    No
+	   </label>  
+	  </div>
+	
+	  
+	  <div class="form-group">  
+	   <label class="form-label-bold" for="cook-other">Tell us more about the difficulties or help you need to prepare food</label>
+	   <textarea type="text" class="cook-other form-control-3-4"></textarea>    
+	  </div>  
+	  
+    
+    </fieldset>
+     
+  </div> 
+     
+  <!-- Primary buttons, secondary links -->
+  <div class="form-group">
+    <input type="submit" class="button" value="Continue">
+  </div>
+
+</form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

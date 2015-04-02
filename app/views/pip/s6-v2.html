@@ -1,0 +1,128 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="s7.html" method="#" class="form">
+			
+				<a href="s5.html" class="example-back-link">Back</a>
+				
+				<div class="section-progress">
+				Step 6 of 17
+				</div>
+				
+				<h1 class="form-title heading-large">
+				Your day-to-day activities - preparing food
+				</h1>
+				
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold" for="preparing-food">Do you need any help to prepare a simple meal for one from fresh ingredients?</legend>
+					<p class="form-hint">This includes food preparation such as peeling, chopping or opening a can, and safely cooking or heating food on a cooker hob or in a microwave oven.</p>
+					
+					<div class="form-group">
+						<label class="block-label" data-target="preparing-food-details" for="preparing-food-yes">
+							<input id="preparing-food-yes" type="radio" name="preparing-food" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="preparing-food-no">
+							<input id="preparing-food-no" type="radio" name="preparing-food" value="No">
+							No
+						</label>  
+					</div>
+				
+				</fieldset>
+				
+				<!--js-hidden / details-->
+				
+				<div class="panel-indent js-hidden" id="preparing-food-details">
+				
+					<fieldset class="inline">
+					
+						<div class="form-group">
+							<p class="form-label-bold" for="aids-appliances">Which of the following best describes you?</p>
+							<label class="block-label" for="radio-1">
+								<input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+							I need to use an aid or appliance to be able to either prepare or cook a simple meal
+							</label>
+							<label class="block-label" for="radio-2">
+								<input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+							I cannot cook a simple meal using a conventional cooker but I am able to do so using a microwave
+							</label>
+							<label class="block-label" for="radio-3">
+								<input id="radio-3" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+							I need prompting to be able to either prepare or cook a simple meal
+							</label>
+							<label class="block-label" for="radio-4">
+								<input id="radio-4" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+							I need supervision or assistance to be able to either prepare or cook a simple meal
+							</label>
+							<p class="form-block">or</p>
+							<label class="block-label" for="radio-5">
+								<input id="radio-5" type="radio" name="radio-group" value="I am a British citizen living abroad">
+							I cannot prepare and cook food at all
+							</label>  
+						</div>
+						
+						
+						<div class="form-group">
+							<p class="form-label-bold" for="another-person">Please tell us more information about the difficulties or help you need to prepare and cook food</p>
+							<details>
+								<summary><span class="summary">Help for this part of the form</span></summary>
+								<div class="panel-indent">
+								<p>Tell us more about:</p>
+								<ul class="list-bullet">
+									<li>If you can't do this safely, to an acceptable standard, as often as you need to and in a reasonable time.</li>
+									<li>If you need help from another person, tell us what kind (for example whether they need to remind or motivate you to cook, plan the task for you, supervise you while you are doing it, physically help you or prepare all your food for you).</li>
+									<li>If you use aids and appliances, tell us what type they are and how you use them.</li>
+									<li>If you can only cook using a microwave.</li>
+									<li>If your ability to do it varies, tell us in what way and how often - for example, telling us about good and bad days or how it varies throughout the day.</li>
+									<li>If you can do it but it takes you a long time</li>
+									<li>if you have side effects from carrying out the activity - either during or after the activity - like pain, breathlessness or tiredness.</li>
+								</ul>
+							</div>
+							</details>
+							<textarea type="text" class="form-control-3-4"></textarea>  
+						</div>
+						
+											
+					</fieldset>
+				
+				</div> 
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

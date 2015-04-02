@@ -1,0 +1,52 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="guard-question05.html" method="#" class="form">
+			
+				<a href="guard-question04.html" class="example-back-link">Back</a>
+				
+				<h1 class="form-title heading-large">
+				Your day-to-day activities - reading and talking with people
+				</h1>
+				
+				<p>You'd be expected to give more details about the difficulties you have reading and talking with people.</p>
+				<p>This is just a demonstration. Please continue.</p>  
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

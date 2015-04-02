@@ -1,0 +1,78 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	<form action="guard-question01.html" method="#" class="form">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+
+				
+				
+					<a href="make" class="example-back-link">Back</a>
+					
+					<!--div class="section-progress">
+					Step 3 of 17
+					</div-->
+					
+					<h1 class="form-title heading-large">
+					Before you start
+					</h1>
+					<p></p>
+					
+					<fieldset>
+						<legend class="form-label">To get Personal Independence Payment you must have a health condition or disability that (choose all that apply):</legend>
+
+						<label class="block-label" for="checkbox-1">
+							<input id="checkbox-1" type="checkbox" value="mobility">
+						affects your mobility, physical ability or mental health</label>
+						<label class="block-label" for="checkbox-2">
+							<input id="checkbox-2" type="checkbox" value="waste-mines">
+						makes it difficult for you to live independently
+						</label>
+						<label class="block-label" for="checkbox-3">
+							<input id="checkbox-3" type="checkbox" value="farm-agricultural">
+						you've had for 3 months
+						</label>
+						<label class="block-label" for="checkbox-4">
+							<input id="checkbox-4" type="checkbox" value="farm-agricultural">
+						is expected to last at least another 9 months
+						</label>
+					</fieldset>
+
+					<div class="panel-indent">
+						<p class="alert">If you're terminally ill and have been given less than 6 months to live then you should phone 0800 120 1234 to have your claim dealt with more quickly.</p>
+					</div>
+
+					<!-- Primary buttons, secondary links -->
+					<div class="form-group">
+						<input type="submit" class="button" value="I understand - start my application">
+					</div>
+
+			</div>
+			<div class="column-third">
+				
+			</div>
+		</div>
+		
+	</form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
