@@ -1,0 +1,59 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="thank-you.html" method="#" class="form">
+
+			<!--<a href="s4.html" class="example-back-link">Back</a>-->
+
+				<h1 class="form-title heading-large">
+				Declaration
+				</h1>
+
+				<p>By sending this application you agree:</p>
+				<ul class="list-bullet">
+					<li>the information in this application is complete and correct</li>
+					<li>to report any changes
+					to your circumstances</li>
+				</ul>
+
+				<div class="panel-indent">
+					<p>You could have to pay a penalty if you give false or incomplete information or don't report changes. Your Personal Independence Payment may also be stopped or reduced.
+					</p>
+				</div>
+
+				<p id="get-started" class="get-started-group">
+					<a class="button" rel="external" href"https://pip-sprint1.herokuapp.com/pip/guard-page.html"> I agree - send my application </a>
+				</p>
+
+			</form>
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
