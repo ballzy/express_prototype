@@ -32,16 +32,16 @@
 				
 				<fieldset class="inline">
 				
-					<legend class="form-label-bold" for="preparing-food">Do you ever need help or use any special equipment to make yourself a meal?</legend>
-					<p class="form-hint">Making a meal includes peeling and chopping vegetables, and heating your food.</p>
+					<legend class="form-label-bold" for="communicating">Do you ever need help to communicate with others?</legend>
+					<p class="form-hint">Communicating means talking with others and understanding them.</p>
 					
 					<div class="form-group">
-						<label class="block-label" data-target="preparing-food-details" for="preparing-food-yes">
-							<input id="preparing-food-yes" type="radio" name="preparing-food" value="Yes">
+						<label class="block-label" data-target="communicating-details" for="communicating-yes">
+							<input id="communicating-yes" type="radio" name="communicating" value="Yes">
 							Yes
 						</label>
-						<label class="block-label" for="preparing-food-no">
-							<input id="preparing-food-no" type="radio" name="preparing-food" value="No">
+						<label class="block-label" for="communicating-no">
+							<input id="communicating-no" type="radio" name="communicating" value="No">
 							No
 						</label>  
 					</div>
@@ -50,13 +50,11 @@
 				
 				<!--js-hidden / details-->
 				
-				<div class="panel-indent js-hidden" id="preparing-food-details">
+				<div class="panel-indent js-hidden" id="communicating-details">
 				
 					<fieldset class="inline">
-					
 						<div class="form-group">
-							<p class="form-label-bold" for="aids-appliances">Do you use any aids or appliances when making a meal?</p>
-							<p class="form-hint">This could include things like easy grip utensils or single lever taps. Also include if you can only use a microwave instead of a hob or cooker.</p>
+							<legend class="form-label-bold" for="aids-appliances">Do you use any aids or appliances to help you to communicate with and understand others?</legend>
 							<label class="block-label" data-target="aids-appliances-details" for="aids-appliances-yes">
 								<input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
 								Yes
@@ -68,13 +66,15 @@
 						</div>
 						
 						<div class="panel js-hidden" id="aids-appliances-details">
-							<p class="form-label" for="aids-appliances-details">Describe what they are and how often you use them.</p>
-							<textarea type="text" class="form-control-3-4"></textarea> 
+							<label class="form-label" for="aids-appliances-details-box">Describe what they are and how often you use them.</label>
+							<textarea type="text" class="form-control-3-4" id="aids-appliances-details-box"></textarea> 
 						</div>
-						
+					</fieldset>
+
+					<fieldset class="inline">
 						<div class="form-group">
-							<p class="form-label-bold" for="another-person">Do you need help from another person to make yourself a meal?</p>
-							<p class="form-hint">As well as physical help this includes if you need them to supervise you or remind you how to prepare or cook something.</p>
+							<label class="form-label-bold" for="another-person">Do you need help from another person to communicate with and understand others?</label>
+							<p class="form-hint">This includes if you need prompting to communicate or if you need someone to use sign language for you.</p>
 							<label class="block-label" data-target="another-person-details" for="another-person-yes">
 								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
 								Yes
@@ -86,24 +86,17 @@
 						</div>
 						
 						<div class="panel js-hidden" id="another-person-details">
-							<p class="form-label" for="another-person-details">Describe the help you need and how often you need it.</p>
-							<textarea type="text" class="form-control-3-4"></textarea> 
+							<label class="form-label" for="another-person-details-box">Describe the help you need and how often you need it.</label>
+							<textarea type="text" class="form-control-3-4" id="another-person-details-box"></textarea> 
 						</div>
-						
-						<div class="form-group">  
-							<label class="form-label-bold" for="cook-other">Describe the difficulties you have when making yourself a meal, including any side effects, eg pain or tiredness.</label>
-							<p class="form-hint">Describe how often you have 'good' and 'bad' days and what happens during them.</p>
-							<!--ul class="form-hint list-bullet">
-								<li>If you can't do this safely, as often as you need to, or in a reasonable time.</li>
-								<li>If you can only cook using a microwave.</li>
-								<li>If your ability to do it varies, tell us in what way and how often - for example, telling us about good and bad days or how it varies throughout the day.</li>
-								<li>If you can do it but it takes you a long time.</li>
-								<li>If you have side effects from carrying out the activity - either during or after the activity - like pain, breathlessness or tiredness.</li>
-							</ul-->
-							<textarea type="text" class="cook-other form-control-3-4"></textarea>
-						</div>  
-					
 					</fieldset>
+						
+					<div class="form-group">  
+						<label class="form-label-bold add-padding" for="communicate-other">Tell us more about the difficulties or help you need to communicate</label>
+						<textarea type="text" class="form-control-3-4" id="communicate-other"></textarea>
+					</div>  
+					
+					
 				
 				</div> 
 				
