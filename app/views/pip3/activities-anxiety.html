@@ -1,0 +1,147 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="activities-planning.html" method="#" class="form">
+			
+				<a href="activities-help.html" class="example-back-link">Back</a>
+				
+				<!--div class="section-progress">
+				Step 6 of 17
+				</div-->
+				
+				<h1 class="form-title heading-large">
+				Your day-to-day life - anxiety and stress
+				</h1>
+				
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold add-padding" for="aids">Do you suffer from anxiety or stress when doing every day tasks or activities?</legend>
+					
+					<div class="form-group">
+						<label class="block-label" data-target="aids-details" for="aids-yes">
+							<input id="aids-yes" type="radio" name="aids" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="aids-no">
+							<input id="aids-no" type="radio" name="aids" value="No">
+							No
+						</label>  
+					</div>
+				
+				</fieldset>
+				
+				<!--js-hidden / details-->
+				
+				<div class="panel-indent js-hidden" id="aids-details">
+				
+					<fieldset>
+						<div class="form-group">
+							<legend class="form-label-bold" for="aids-appliances">Which of the following activities cause you anxiety or stress?</legend>
+							<label class="block-label"  for="aids-preparing-food">
+								<input id="aids-preparing-food" type="checkbox" name="aids-appliances" value="Preparing food">
+								Preparing food
+							</label>
+							<label class="block-label" for="aids-eating-food">
+								<input id="aids-eating-food" type="checkbox" name="aids-appliances" value="Eating food">
+								Eating food
+							</label> 
+							<label class="block-label" for="aids-communicating">
+								<input id="aids-communicating" type="checkbox" name="aids-appliances" value="Communicating">
+								Communicating
+							</label> 
+							<label class="block-label" for="aids-moving">
+								<input id="aids-moving" type="checkbox" name="aids-appliances" value="Moving around">
+								Moving around
+							</label> 
+							<label class="block-label" for="aids-medication">
+								<input id="aids-medication" type="checkbox" name="aids-appliances" value="Taking medication">
+								Taking medication
+							</label> 
+							<label class="block-label" for="aids-washing">
+								<input id="aids-washing" type="checkbox" name="aids-appliances" value="Washing">
+								Washing and bathing
+							</label> 
+							<label class="block-label" for="aids-dressing">
+								<input id="aids-dressing" type="checkbox" name="aids-appliances" value="Dressing">
+								Dressing and undressing
+							</label> 
+							<label class="block-label" for="aids-toilet">
+								<input id="aids-toilet" type="checkbox" name="aids-appliances" value="Going to the toilet">
+								Going to the toilet
+							</label> 
+							<label class="block-label" for="aids-reading">
+								<input id="aids-reading" type="checkbox" name="aids-appliances" value="Reading">
+								Reading
+							</label> 
+							<label class="block-label" for="aids-going-out">
+								<input id="aids-going-out" type="checkbox" name="aids-appliances" value="Going out">
+								Going out
+							</label> 
+							<label class="block-label" for="aids-money">
+								<input id="aids-money" type="checkbox" name="aids-appliances" value="Managing money">
+								Managing money
+							</label> 
+							<label class="block-label" for="aids-planning">
+								<input id="aids-planning" type="checkbox" name="aids-appliances" value="Planning">
+								Planning a route
+							</label> 
+							<label class="block-label" for="aids-other">
+								<input id="aids-other" type="checkbox" name="aids-appliances" value="Other">
+								Other
+							</label> 
+						</div>
+					</fieldset>
+						
+					<div class="panel form-group">  
+						<label class="form-label-bold add-padding" for="aids-other">Tell us more about the anxiety or stress you get when doing the above activities and how often it affects you.</label>
+						<textarea type="text" class="form-control-3-4" id="aids-other"></textarea>
+					</div>  
+
+					<div class="form-group">  
+						<label class="form-label-bold add-padding" for="aids-other">What do you need to manage your stress?</label>
+						<textarea type="text" class="form-control-3-4" id="aids-other"></textarea>
+					</div>  
+				
+				</div> 
+				
+
+
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
