@@ -1,0 +1,211 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="activities-help.html" method="#" class="form">
+			
+				<a href="before-you-start.html" class="example-back-link">Back</a>
+				
+				<!--div class="section-progress">
+				Step 6 of 17
+				</div-->
+				
+				<h1 class="form-title heading-large">
+				Your day-to-day life - aids and appliances
+				</h1>
+				
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold" for="aids">Do you need special aids or equipment in your daily life?</legend>
+					<p class="form-hint">Eg a walking stick to help you get around, easy grip kitchen utensils or a guide dog.</p>
+					
+					<div class="form-group">
+						<label class="block-label" data-target="aids-details" for="aids-yes">
+							<input id="aids-yes" type="radio" name="aids" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="aids-no">
+							<input id="aids-no" type="radio" name="aids" value="No">
+							No
+						</label>  
+					</div>
+				
+				</fieldset>
+				
+				<!--js-hidden / details-->
+				
+				<div class="panel-indent js-hidden" id="aids-details">
+				
+					<fieldset>
+						<div class="form-group">
+							<legend class="form-label-bold" for="aids-appliances">For which of the following activities do you need special aids or equipment?</legend>
+							<label class="block-label"  for="aids-preparing-food">
+								<input id="aids-preparing-food" type="checkbox" name="aids-appliances" value="Preparing food">
+								Preparing food
+							</label>
+							<label class="block-label" for="aids-eating-food">
+								<input id="aids-eating-food" type="checkbox" name="aids-appliances" value="Eating food">
+								Eating food
+							</label> 
+							<label class="block-label" for="aids-communicating">
+								<input id="aids-communicating" type="checkbox" name="aids-appliances" value="Communicating">
+								Communicating
+							</label> 
+							<label class="block-label" for="aids-moving">
+								<input id="aids-moving" type="checkbox" name="aids-appliances" value="Moving around">
+								Moving around
+							</label> 
+							<label class="block-label" for="aids-medication">
+								<input id="aids-medication" type="checkbox" name="aids-appliances" value="Taking medication">
+								Taking medication
+							</label> 
+							<label class="block-label" for="aids-washing">
+								<input id="aids-washing" type="checkbox" name="aids-appliances" value="Washing">
+								Washing and bathing
+							</label> 
+							<label class="block-label" for="aids-dressing">
+								<input id="aids-dressing" type="checkbox" name="aids-appliances" value="Dressing">
+								Dressing and undressing
+							</label> 
+							<label class="block-label" for="aids-toilet">
+								<input id="aids-toilet" type="checkbox" name="aids-appliances" value="Going to the toilet">
+								Going to the toilet
+							</label> 
+							<label class="block-label" for="aids-reading">
+								<input id="aids-reading" type="checkbox" name="aids-appliances" value="Reading">
+								Reading
+							</label> 
+							<label class="block-label" for="aids-other">
+								<input id="aids-other" type="checkbox" name="aids-appliances" value="Other">
+								Other
+							</label> 
+						</div>
+					</fieldset>
+						
+					<div class="panel form-group">  
+						<label class="form-label-bold add-padding" for="aids-other">Tell us what you use, why and how often you use it.</label>
+						<textarea type="text" class="form-control-3-4" id="aids-other"></textarea>
+					</div>  
+				
+				</div> 
+
+
+
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold" for="house">Is your home specially adapted to suit your daily needs?</legend>
+					<p class="form-hint">Eg lowered work surfaces, ramp access or bathroom handrails.</p>
+					
+					<div class="form-group">
+						<label class="block-label" data-target="house-details" for="house-yes">
+							<input id="house-yes" type="radio" name="house" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="house-no">
+							<input id="house-no" type="radio" name="house" value="No">
+							No
+						</label>  
+					</div>
+				
+				</fieldset>
+				
+				<!--js-hidden / details-->
+				
+				<div class="panel-indent js-hidden" id="house-details">
+				
+					<fieldset>
+						<div class="form-group">
+							<legend class="form-label-bold" for="house">Which areas of your home are specially adapted?</legend>
+							<label class="block-label"  for="house-front-door">
+								<input id="house-front-door" type="checkbox" name="house" value="Front door">
+								Front door
+							</label>
+							<label class="block-label"  for="house-hallway">
+								<input id="house-hallway" type="checkbox" name="house" value="Hallway">
+								Hallway
+							</label>
+							<label class="block-label"  for="house-kitchen">
+								<input id="house-kitchen" type="checkbox" name="house" value="Kitchen">
+								Kitchen
+							</label>
+							<label class="block-label"  for="house-lounge">
+								<input id="house-loune" type="checkbox" name="house" value="Lounge">
+								Lounge or sitting room
+							</label>
+							<label class="block-label"  for="house-dining-room">
+								<input id="house-dining-room" type="checkbox" name="house" value="Dining room">
+								Dining room/area
+							</label>
+							<label class="block-label"  for="house-stairs">
+								<input id="house-stairs" type="checkbox" name="house" value="Stairs">
+								Stairs
+							</label>
+							<label class="block-label"  for="house-bedroom">
+								<input id="house-bedroom" type="checkbox" name="house" value="Bedroom">
+								Your bedroom
+							</label>
+							<label class="block-label"  for="house-bathroom">
+								<input id="house-bathroom" type="checkbox" name="house" value="Bathroom and toilet">
+								Bathrooms and toilet
+							</label>
+							<label class="block-label"  for="house-garden">
+								<input id="house-garden" type="checkbox" name="house" value="Garden">
+								Garden
+							</label>
+							
+						</div>
+					</fieldset>
+						
+					<div class="panel form-group">  
+						<label class="form-label-bold add-padding" for="house-other">Tell us what modifications are in each room and how often you use them</label>
+						<textarea type="text" class="form-control-3-4" id="house-other"></textarea>
+					</div>  
+				
+				</div>
+
+				<fieldset class="">
+				
+					<legend class="form-label-bold add-padding" for="home">What modifications do you need in your home to live independently?</legend>
+					<textarea type="text" class="form-control-3-4" id="home"></textarea>
+				
+				</fieldset>
+
+
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
