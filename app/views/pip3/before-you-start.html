@@ -1,0 +1,69 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	<form action="personal-details.html" method="#" class="form">
+		<div class="grid-row">
+			<div class="column-two-thirds">
+
+				
+				
+					<a href="make-a-claim.html" class="example-back-link">Back</a>
+					
+					<!--div class="section-progress">
+					Step 3 of 17
+					</div-->
+					
+					<h1 class="form-title heading-large">
+					Before you start
+					</h1>
+
+					<p>To get Personal Independence Payment you must have a <a href="/definition-of-disability-under-equality-act-2010">long-term health condition or disability</a> that:</p>
+
+					<ul class="list-bullet">
+						<li>affects your mobility, physical ability or mental health</li>
+						<li>makes it difficult for you to live independently</li>
+						<li>you've had for 3 months</li>
+						<li>is expected to last at least another 9 months</li>
+					</ul>
+
+					<p>Your application may include a face to face meeting with a healthcare professional to assess how your condition affects your daily life.</p>
+
+					<div class="panel-indent">
+						<p class="alert">If you're terminally ill and have been given less than 6 months to live then you should phone 0800 120 1234 to have your claim dealt with more quickly.</p>
+					</div>
+					
+					<!-- Primary buttons, secondary links -->
+					<div class="form-group">
+						<input type="submit" class="button" value="I understand - start my application">
+					</div>
+				
+				
+			  
+			</div>
+			<div class="column-third">
+				
+			</div>
+		</div>
+	</form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
