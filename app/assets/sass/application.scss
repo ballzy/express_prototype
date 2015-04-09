@@ -49,3 +49,32 @@
   display: block;
   padding-bottom: 18px;
 }
+
+.application-notice, article .application-notice
+{
+  padding-top: 0.1em;
+  padding-right: 0px;
+  padding-bottom: 0.1em;
+  padding-left: 1em;
+}
+
+.help-notice, article .help-notice
+{
+  background-color: transparent;
+  background-image: url("https://assets.digital.cabinet-office.gov.uk/static/icon-important-0976ff4a275422b183be917d4b3ef444.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0px 3em;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+}
+
+.help-notice p, .help-notice p, .info-notice, article p + .help-notice, article p + .info-notice
+{
+
+  margin-left: 0.5em;
+  padding-left: 2em;
+  margin-top: 2em;
+  font-weight: bold;
+}
