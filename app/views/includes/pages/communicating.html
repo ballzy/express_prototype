@@ -1,0 +1,79 @@
+				<h1 class="form-title heading-large">
+				Your day-to-day life - communicating
+				</h1>
+				
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold" for="communicating">Do you ever need help to communicate with others?</legend>
+					<p class="form-hint">Communicating means talking with others and understanding them.</p>
+					
+					<div class="form-group">
+						<label class="block-label" data-target="communicating-details" for="communicating-yes">
+							<input id="communicating-yes" type="radio" name="communicating" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="communicating-no">
+							<input id="communicating-no" type="radio" name="communicating" value="No">
+							No
+						</label>  
+					</div>
+				
+				</fieldset>
+				
+				<!--js-hidden / details-->
+				
+				<div class="panel-indent js-hidden" id="communicating-details">
+				
+					<fieldset class="inline">
+						<div class="form-group">
+							<legend class="form-label-bold" for="aids-appliances">Do you use any aids or appliances to help you to communicate with and understand others?</legend>
+							<label class="block-label" data-target="aids-appliances-details" for="aids-appliances-yes">
+								<input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="aids-appliances-no">
+								<input id="aids-appliances-no" type="radio" name="aids-appliances" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="panel js-hidden" id="aids-appliances-details">
+							<label class="form-label" for="aids-appliances-details-box">Describe what they are and how often you use them.</label>
+							<textarea type="text" class="form-control-3-4" id="aids-appliances-details-box"></textarea> 
+						</div>
+					</fieldset>
+
+					<fieldset class="inline">
+						<div class="form-group">
+							<label class="form-label-bold" for="another-person">Do you need help from another person to communicate with and understand others?</label>
+							<p class="form-hint">This includes if you need prompting to communicate or if you need someone to use sign language for you.</p>
+							<label class="block-label" data-target="another-person-details" for="another-person-yes">
+								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="another-person-no">
+								<input id="another-person-no" type="radio" name="another-person" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="panel js-hidden" id="another-person-details">
+							<label class="form-label" for="another-person-details-box">Describe the help you need and how often you need it.</label>
+							<textarea type="text" class="form-control-3-4" id="another-person-details-box"></textarea> 
+						</div>
+					</fieldset>
+						
+					<div class="form-group">  
+						<label class="form-label-bold add-padding" for="communicate-other">Tell us more about the difficulties or help you need to communicate</label>
+						<textarea type="text" class="form-control-3-4" id="communicate-other"></textarea>
+					</div>  
+					
+					
+				
+				</div> 
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+				<button class="button">Save</button>
