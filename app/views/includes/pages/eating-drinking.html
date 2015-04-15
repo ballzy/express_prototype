@@ -1,11 +1,11 @@
 				<h1 class="form-title heading-large">
-				Your day-to-day life - preparing food
+				Your day-to-day life - eating and drinking
 				</h1>
 				
 				<fieldset class="inline">
 				
-					<legend class="form-label-bold" for="preparing-food">Do you ever need help or use any special equipment to make yourself a meal?</legend>
-					<p class="form-hint">Making a meal includes peeling and chopping vegetables, and heating your food.</p>
+					<legend class="form-label-bold" for="preparing-food">Do you ever need help or use any special equipment to eat or drink?</legend>
+					<p class="form-hint">This includes remembering when to eat cutting food into pieces, putting food or drink in your mouth or chewing and swallowing food.</p>
 					
 					<div class="form-group">
 						<label class="block-label" data-target="preparing-food-details" for="preparing-food-yes">
@@ -27,8 +27,8 @@
 					<fieldset class="inline">
 					
 						<div class="form-group">
-							<label class="form-label-bold" for="aids-appliances">Do you use any aids or appliances when making a meal?</label>
-							<p class="form-hint">This could include things like easy grip utensils or single lever taps. Also include if you can only use a microwave instead of a hob or cooker.</p>
+							<label class="form-label-bold" for="aids-appliances">Do you use any aids or special equipment when eating or drinking?</label>
+							<p class="form-hint">This includes things like adapted cutlery.</p>
 							<label class="block-label" data-target="aids-appliances-details" for="aids-appliances-yes">
 								<input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
 								Yes
@@ -43,10 +43,30 @@
 							<label class="form-label" for="aids-appliances-details-box">Describe what they are and how often you use them.</label>
 							<textarea type="text" class="form-control-3-4" id="aids-appliances-details-box"></textarea> 
 						</div>
+
+
+						<div class="form-group">
+							<label class="form-label-bold" for="feeding-tube">Do you use a feeding tube or similar device to eat or drink?</label>
+							<p class="form-hint">This includes things like a feeding tube with a rate limiting device as a delivery system or feed pump.</p>
+							<label class="block-label" data-target="feeding-tube-details" for="feeding-tube-yes">
+								<input id="feeding-tube-yes" type="radio" name="feeding-tube" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="feeding-tube-no">
+								<input id="feeding-tube-no" type="radio" name="feeding-tube" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="panel js-hidden" id="feeding-tube-details">
+							<label class="form-label" for="feeding-tube-details-box">Describe what they are and how often you use them.</label>
+							<textarea type="text" class="form-control-3-4" id="feeding-tube-details-box"></textarea> 
+						</div>
+
 						
 						<div class="form-group">
-							<label class="form-label-bold" for="another-person">Do you need help from another person to make yourself a meal?</label>
-							<p class="form-hint">As well as physical help this includes if you need them to supervise you or remind you how to prepare or cook something.</p>
+							<label class="form-label-bold" for="another-person">Do you need help from another person to eat or drink?</label>
+							<p class="form-hint">This includes cutting your food up, feeding you, supervisinng you for your own safety or reminding you to eat.</p>
 							<label class="block-label" data-target="another-person-details" for="another-person-yes">
 								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
 								Yes
@@ -63,8 +83,8 @@
 						</div>
 						
 						<div class="form-group">  
-							<label class="form-label-bold" for="cook-other">Describe the difficulties you have when making yourself a meal, including any side effects, eg pain or tiredness.</label>
-							<p class="form-hint">Describe how often you have 'good' and 'bad' days and what happens during them.</p>
+							<label class="form-label-bold" for="cook-other">Describe the difficulties or help you need to eat and drink,</label>
+							<p class="form-hint">This includes if you can't do it safely, to an acceptable standard or in a reasonable time.</p>
 							<!--ul class="form-hint list-bullet">
 								<li>If you can't do this safely, as often as you need to, or in a reasonable time.</li>
 								<li>If you can only cook using a microwave.</li>

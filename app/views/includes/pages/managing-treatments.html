@@ -1,0 +1,82 @@
+				<h1 class="form-title heading-large">
+				Your day-to-day life - mixing with other people
+				</h1>
+				
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold" for="communicating">Do you need help to monitor your health condition, take medication or manage treatments at home?</legend>
+					<p class="form-hint">This includes being prompted or using an aid.</p>
+					
+					<div class="form-group">
+						<label class="block-label" data-target="communicating-details" for="communicating-yes">
+							<input id="communicating-yes" type="radio" name="communicating" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="communicating-no">
+							<input id="communicating-no" type="radio" name="communicating" value="No">
+							No
+						</label>  
+					</div>
+				
+				</fieldset>
+				
+				<!--js-hidden / details-->
+				
+				<div class="panel-indent js-hidden" id="communicating-details">
+					
+					<fieldset class="inline">
+						<div class="form-group">
+							<legend class="form-label-bold" for="aids-appliances">Do you use an aid or special equipment to monitor your health condition, take medication or manage your treatments at home?</legend>
+							<p class="form-hint">This includes using a Dosette Box for tablets</p>
+							<label class="block-label" data-target="aids-appliances-details" for="aids-appliances-yes">
+								<input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="aids-appliances-no">
+								<input id="aids-appliances-no" type="radio" name="aids-appliances" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="panel js-hidden" id="aids-appliances-details">
+							<label class="form-label" for="aids-appliances-details-box">Tell us about the aids or special equipment you use and how often you use them.</label>
+							<textarea type="text" class="form-control-3-4" id="aids-appliances-details-box"></textarea> 
+						</div>
+					</fieldset>
+
+
+					<fieldset class="inline">
+						<div class="form-group">
+							<legend class="form-label-bold" for="aids-appliances">Do you need help from another person to monitor your health conditions, take medication or manage home treatments?</legend>
+							<p class="form-hint">This includes being reminded to take you medication, being supervised for your own safety or if you can't physically manage alone</p>
+							<label class="block-label" data-target="aids-appliances-details" for="aids-appliances-yes">
+								<input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="aids-appliances-no">
+								<input id="aids-appliances-no" type="radio" name="aids-appliances" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="panel js-hidden" id="aids-appliances-details">
+							<label class="form-label" for="aids-appliances-details-box">Tell us about the type of help that you need to monitor your health, take medication or manage home treatments.</label>
+							<textarea type="text" class="form-control-3-4" id="aids-appliances-details-box"></textarea> 
+						</div>
+					</fieldset>
+						
+					<div class="form-group">  
+						<label class="form-label-bold add-padding" for="communicate-other">Tell us more information about the difficulties or help you need to monitor your health conditions, take medication or manage home therapies.</label>
+						<p class="form-hint">If your needs vary tell us in what way and how often</p>
+						<textarea type="text" class="form-control-3-4" id="communicate-other"></textarea>
+					</div>  
+					
+					
+				
+				</div> 
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+				<button class="button">Save</button>
