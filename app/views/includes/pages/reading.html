@@ -1,0 +1,78 @@
+				<h1 class="form-title heading-large">
+				Your day-to-day life - reading
+				</h1>
+				
+				<fieldset class="inline">
+				
+					<legend class="form-label-bold" for="communicating">Do you need help to read and understand signs, symbols or words?</legend>
+					<p class="form-hint">This includes help from a person, aid or special equipment.</p>
+					
+					<div class="form-group">
+						<label class="block-label" data-target="communicating-details" for="communicating-yes">
+							<input id="communicating-yes" type="radio" name="communicating" value="Yes">
+							Yes
+						</label>
+						<label class="block-label" for="communicating-no">
+							<input id="communicating-no" type="radio" name="communicating" value="No">
+							No
+						</label>  
+					</div>
+				
+				</fieldset>
+				
+				<!--js-hidden / details-->
+				
+				<div class="panel-indent js-hidden" id="communicating-details">
+				
+					<fieldset class="inline">
+						<div class="form-group">
+							<legend class="form-label-bold" for="aids-appliances">Do you use an aid or special equipment to read signs, symbols or words?</legend>
+							<p class="form-hint">This includes things like magnifiers. This does not include items such as spectacles or contact lenses.
+							<label class="block-label" data-target="aids-appliances-details" for="aids-appliances-yes">
+								<input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="aids-appliances-no">
+								<input id="aids-appliances-no" type="radio" name="aids-appliances" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="panel js-hidden" id="aids-appliances-details">
+							<label class="form-label" for="aids-appliances-details-box">Tell us what type they are and how you use them.</label>
+							<textarea type="text" class="form-control-3-4" id="aids-appliances-details-box"></textarea> 
+						</div>
+					</fieldset>
+
+					<fieldset class="inline">
+						<div class="form-group">
+							<label class="form-label-bold add-padding" for="another-person">Do you need help from another person to read or understand signs, symbols or words?</label>
+							
+							<label class="block-label" data-target="another-person-details" for="another-person-yes">
+								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
+								Yes
+							</label>
+							<label class="block-label" for="another-person-no">
+								<input id="another-person-no" type="radio" name="another-person" value="No">
+								No
+							</label>  
+						</div>
+						
+						<div class="panel js-hidden" id="another-person-details">
+							<label class="form-label" for="another-person-details-box">Tell us more about the help you need and how much it varys.</label>
+							<textarea type="text" class="form-control-3-4" id="another-person-details-box"></textarea> 
+						</div>
+					</fieldset>
+
+					<div class="panel" id="details">
+						<label class="form-label-bold add-padding" for="details-box">Tell us more about the difficulties you have reading signs, symbols or words.</label>
+						<textarea type="text" class="form-control-3-4" id="details-box"></textarea> 
+					</div>
+				
+				</div> 
+				
+				<!-- Primary buttons, secondary links -->
+				<div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+				<button class="button">Save</button>
