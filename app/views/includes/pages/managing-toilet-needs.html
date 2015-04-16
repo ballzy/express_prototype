@@ -1,11 +1,11 @@
 				<h1 class="form-title heading-large">
-				Your day-to-day life - going out
+				Your day-to-day life - managing toilet needs
 				</h1>
 				
 				<fieldset class="inline">
 				
-					<legend class="form-label-bold" for="communicating">Do you need help to plan and follow a route to another place?</legend>
-					<p class="form-hint">This includes help from a person, guide dog or specialist aid.</p>
+					<legend class="form-label-bold" for="communicating">Do you need help to wash and bathe?</legend>
+					<p class="form-hint">This includes help from a person, aid or special equipment.</p>
 					
 					<div class="form-group">
 						<label class="block-label" data-target="communicating-details" for="communicating-yes">
@@ -26,7 +26,7 @@
 				
 					<fieldset class="inline">
 						<div class="form-group">
-							<legend class="form-label-bold" for="aids-appliances">Do you need help from another person to plan a route to somewhere you know?</legend>
+							<legend class="form-label-bold" for="aids-appliances">Do you use an aid or special equipment to wash and bathe yourself?</legend>
 							<label class="block-label" data-target="aids-appliances-details" for="aids-appliances-yes">
 								<input id="aids-appliances-yes" type="radio" name="aids-appliances" value="Yes">
 								Yes
@@ -38,14 +38,14 @@
 						</div>
 						
 						<div class="panel js-hidden" id="aids-appliances-details">
-							<label class="form-label" for="aids-appliances-details-box">Tell us about the type of help that you need and how much your need varys.</label>
+							<label class="form-label" for="aids-appliances-details-box">Tell us what type they are and how you use them.</label>
 							<textarea type="text" class="form-control-3-4" id="aids-appliances-details-box"></textarea> 
 						</div>
 					</fieldset>
 
 					<fieldset class="inline">
 						<div class="form-group">
-							<label class="form-label-bold add-padding" for="another-person">Do you need help from another person, guide dog or specialist aid to get to a location that is unfamiliar to you?</label>
+							<label class="form-label-bold add-padding" for="another-person">Do you need help from another person to encourage or physically help you to wash and bathe?</label>
 							
 							<label class="block-label" data-target="another-person-details" for="another-person-yes">
 								<input id="another-person-yes" type="radio" name="another-person" value="Yes">
@@ -62,34 +62,13 @@
 							<textarea type="text" class="form-control-3-4" id="another-person-details-box"></textarea> 
 						</div>
 					</fieldset>
-				
-				</div> 
 
-				<fieldset class="inline">
-				
-					<legend class="form-label-bold add-padding" for="anxiety">Are you unable to leave the house because of severe anxiety or distress?</legend>
-					
-					<div class="form-group">
-						<label class="block-label" data-target="anxiety-details" for="anxiety-yes">
-							<input id="anxiety-yes" type="radio" name="anxiety" value="Yes">
-							Yes
-						</label>
-						<label class="block-label" for="anxiety-no">
-							<input id="anxiety-no" type="radio" name="anxiety" value="No">
-							No
-						</label>  
+					<div class="panel" id="details">
+						<label class="form-label-bold add-padding" for="details-box">Tell us more about the difficulties you have washing and bathing.</label>
+						<textarea type="text" class="form-control-3-4" id="details-box"></textarea> 
 					</div>
 				
-				</fieldset>
-				
-				<!--js-hidden / details-->
-				
-				
-				<div class="panel-indent js-hidden" id="anxiety-details">
-					<label class="form-label" for="another-person-details-box">Tell us more about the anxiety or stress you suffer from before, during and after leaving the house.</label>
-					<textarea type="text" class="form-control-3-4" id="another-person-details-box"></textarea> 
-				</div>
-				
+				</div> 
 				
 				<!-- Primary buttons, secondary links -->
 				<div class="form-group">
