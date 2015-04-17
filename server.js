@@ -29,14 +29,15 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use('/public', express.static(__dirname + '/govuk_modules/govuk_template/assets'));
 app.use('/public', express.static(__dirname + '/govuk_modules/govuk_frontend_toolkit'));
 
+//add post body stuff
+app.use(express.bodyParser());
+
+
 // routes (found in routes.js)
 
 var assetPath = '/public/';
 
 routes.bind(app, assetPath);
-
-//add post body stuff
-app.use(express.bodyParser());
 
 // auto render any view that exists
 

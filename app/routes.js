@@ -28,6 +28,8 @@ module.exports = {
     app.post('/eat-drink-more-details', function(req,res){
 
 
+        console.log(req.body)
+        
          if(req.body["do-you-need-prompting"] == "Yes"){ doYouNeedPrompting = true }else{ doYouNeedPrompting = false }
          if(req.body["do-you-need-someone-to-cut"] == "Yes"){ doYouNeedSomeone = true }else{ doYouNeedSomeone = false }
          if(req.body["do-you-need-supervising"] == "Yes"){ doYouNeedSupervising = true }else{ doYouNeedSupervising = false }
