@@ -1,0 +1,53 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="eat-drink-more-details" method="post" class="form">
+
+				<a href="/" class="example-back-link">Back</a>
+
+				<h1 class="form-title heading-large">
+				Tell us about your eating and drinking
+				</h1>
+					         {{>includes/form_elements/do_you_need_prompting}}
+
+                    {{>includes/form_elements/do_you_need_to_cut}}
+
+                    {{>includes/form_elements/do_you_need_supervising}}
+
+                    {{>includes/form_elements/do_you_use_feeding_tube}}
+
+                    {{>includes/form_elements/do_you_use_an_aid}}
+
+
+                <div class="form-group">
+					<input type="submit" class="button" value="Continue">
+				</div>
+
+		</div>
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

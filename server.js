@@ -35,6 +35,9 @@ var assetPath = '/public/';
 
 routes.bind(app, assetPath);
 
+//add post body stuff
+app.use(express.bodyParser());
+
 // auto render any view that exists
 
 app.get(/^\/(.+)/, function (req, res) {
