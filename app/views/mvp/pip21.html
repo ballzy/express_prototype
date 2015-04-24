@@ -1,0 +1,46 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+	{{>includes/phase_banner}}
+	
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="pip22.html" method="#" class="form">
+			
+				<a href="pip20.html" class="example-back-link">Back</a>
+				
+				<!--div class="section-progress">
+				Step 1 of 17
+				</div-->
+				
+				{{>includes/pages/before-you-start}}
+			
+			</form>
+		
+		</div>
+		<div class="column-third">
+			
+		</div>
+	</div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
